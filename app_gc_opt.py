@@ -25,7 +25,7 @@ def optimize_guiding_center_nilss(par_name, par_bounds, u0, nus, dt, nseg, T_seg
 
     def scipy_objective(par_value):
         J, dJdpar = objective(par_value[0])
-        return J , np.array([dJdpar])
+        return J, np.array([dJdpar])
     
     result = minimize(
         fun=scipy_objective,
@@ -61,7 +61,6 @@ def main():
     nseg = 200
     T_seg = 0.01
     nseg_ps = 200
-    nc = 3
     nus = 1
     dt = 0.0001
     x = 0.1 * np.random.rand()
@@ -70,12 +69,14 @@ def main():
     u0 = np.array([x, y, z])
     
     result = optimize_guiding_center_nilss(par, par_limit[par], u0, nus, dt, nseg, T_seg, nseg_ps, RK4, fJJu)
-    text_result_path = os.path.join(results_dir, f"optimization_guiding_center_results_{par_name}.txt")
+    results_dir = "results"
+    os.makedirs(results_dir, exist_ok=True)
+    text_result_path = os.path.join(results_dir, f"optimization_guiding_center_results_{par}.txt")
     with open(text_result_path, "w") as f:
         f.write("Optimization Result:\n")
-        f.write(f"  Optimal {par_name}: {result.x[0]:.4f}\n")
+        f.write(f"  Optimal {par}: {result.x[0]:.4f}\n")
         f.write(f"  Minimum cost J: {result.fun:.4e}\n")
-    
+
 
 if __name__ == '__main__':
     main()
