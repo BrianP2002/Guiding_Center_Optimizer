@@ -1,0 +1,61 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it together with the NILSS paper of Ni and Wang."
+title: "nilss-jax: non-intrusive least squares shadowing in JAX, with reliability diagnostics"
+type: software
+version: 0.1.0
+date-released: 2026-10-07
+license: MIT
+abstract: >-
+  Streaming, multi-parameter non-intrusive least squares shadowing (NILSS) for sensitivities of long-time averages of
+  chaotic flows, written in JAX (automatic Jacobian-vector products, optional energy-surface constraint for Hamiltonian
+  flows), with ensembles of runs, a reliability report that flags the failure signatures of shadowing in systems that
+  are not uniformly hyperbolic, a finite-difference reference, and the vacuum Boozer-coordinate guiding-center flow as an
+  application.
+authors:
+  - family-names: Ha
+    given-names: Lin
+repository-code: "https://github.com/BrianP2002/Guiding_Center_Optimizer"
+keywords:
+  - chaos
+  - sensitivity analysis
+  - shadowing
+  - NILSS
+  - JAX
+  - guiding center
+  - stellarator
+preferred-citation:
+  type: generic
+  title: "Sensitivity analysis on chaotic dynamical systems by Non-Intrusive Least Squares Shadowing (NILSS)"
+  authors:
+    - family-names: Ni
+      given-names: Angxiu
+    - family-names: Wang
+      given-names: Qiqi
+  year: 2016
+  url: "https://arxiv.org/abs/1611.00880"
+  notes: "arXiv:1611.00880; published in the Journal of Computational Physics"
+references:
+  - type: generic
+    title: "Sensitivity analysis on chaotic dynamical systems by Finite Difference Non-Intrusive Least Squares Shadowing (FD-NILSS)"
+    authors:
+      - family-names: Ni
+        given-names: Angxiu
+      - family-names: Wang
+        given-names: Qiqi
+      - family-names: Fernandez
+        given-names: Pablo
+      - family-names: Talnikar
+        given-names: Chaitanya
+    year: 2017
+    url: "https://arxiv.org/abs/1711.06633"
+    notes: "arXiv:1711.06633"
+  - type: generic
+    title: "Adjoint sensitivity analysis on chaotic dynamical systems by Non-Intrusive Least Squares Adjoint Shadowing (NILSAS)"
+    authors:
+      - family-names: Ni
+        given-names: Angxiu
+      - family-names: Talnikar
+        given-names: Chaitanya
+    year: 2018
+    url: "https://arxiv.org/abs/1801.08674"
+    notes: "arXiv:1801.08674"

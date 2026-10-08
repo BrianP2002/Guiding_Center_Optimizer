@@ -1,0 +1,11 @@
+# produced by: python3 experiments/scripts/summarize_gc_symmetry_breaking.py results/gc_symmetry_breaking   (run from the repository root on the stored results; numbers with more than 12 digits are shown in scientific notation)
+T = 1000; regular flow gives lambda_1 ~ log(T)/T ~ 0.0069
+  b1     b0  n |                        lam1 per IC |       <x> per IC (mean over parts)   x_in  fin
+ 0.0  0.000  3 |             0.0015  0.0012  0.0014 |              4.348   4.182   4.288  0.011 True
+ 0.0  0.020  3 |             0.0018  0.0017  0.0018 |              4.450   4.418   4.615  0.027 True
+ 0.0  0.050  3 |             0.0012  0.0022  0.0014 |              5.346   5.652   6.185  0.094 True
+ 0.0  0.100  3 |             0.0054  0.0048  0.0011 |           1658.204 660.278  17.653 621.113 True
+ 2.0  0.000  3 |             0.0015  0.0012  0.0014 |              4.348   4.182   4.288  0.011 True
+ 2.0  0.020  3 |             0.0006  0.0017  0.0016 |              4.623   4.240   3.977  0.024 True
+ 2.0  0.050  3 |             0.0011  0.0021  0.0022 |              4.898   4.228   3.308  0.046 True
+ 2.0  0.100  3 |             0.0029  0.0011  0.0016 |              5.136   3.845   2.088  0.028 True

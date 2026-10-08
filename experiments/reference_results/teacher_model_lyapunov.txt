@@ -1,0 +1,15 @@
+# produced by: python3 experiments/scripts/summarize_gc_lyapunov.py results/gc_lyapunov   (run from the repository root on the stored results; numbers with more than 12 digits are shown in scientific notation)
+T = 1000 per trajectory. A resolved positive exponent needs lambda_1 * T >> 1; lambda_1 ~ log(T)/T ~ 0.0069 is what a regular flow gives.
+x_ic = std over initial conditions of the trajectory average <x>; x_in = mean std between the parts of one trajectory.
+     par which   value  n | lam1 mean  lam1 max  lam1*T lam2 mean lam3 mean | <x> mean   x_ic   x_in   xmax  fin
+ default  None       -  6 |    0.0015    0.0022    2.18    0.0008   -0.0022 |    4.735  0.595  0.008  11.00 True
+      a0    lo   0.050  6 |    0.0003    0.0004    0.45    0.0002   -0.0005 |    1.702  0.340  0.020   4.30 True
+      a0    hi   0.250  6 |    0.0022    0.0033    3.34    0.0002   -0.0028 |   11.386  1.313  0.063  24.77 True
+      a1    lo   0.900  6 |    0.0023    0.0027    2.69    0.0006   -0.0028 |    6.899  0.615  0.005  15.37 True
+      a1    hi   1.100  6 |    0.0015    0.0017    1.67    0.0009   -0.0025 |    3.468  0.587  0.006   8.51 True
+    iota    lo   0.400  6 |    0.0015    0.0018    1.82    0.0007   -0.0024 |    3.517  0.511  0.006   8.34 True
+    iota    hi   0.600  6 |    0.0023    0.0027    2.75    0.0006   -0.0028 |    6.786  0.728  0.006  15.36 True
+     lam    lo   0.010  6 |    0.0033    0.0044    4.42    0.0009   -0.0034 |  128.942  4.927  0.261 255.61 True
+     lam    hi   0.210  6 |    0.0011    0.0017    1.69    0.0006   -0.0017 |    1.389  0.316  0.011   3.58 True
+       G    lo   0.900  6 |    0.0023    0.0032    3.22   -0.0001   -0.0021 |    4.007  0.542  0.029   9.38 True
+       G    hi   1.100  6 |    0.0012    0.0014    1.40    0.0010   -0.0022 |    5.546  0.646  0.043  12.69 True

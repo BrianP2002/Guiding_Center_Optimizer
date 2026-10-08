@@ -1,0 +1,36 @@
+# produced by: python3 experiments/scripts/summarize_gc_collision.py none results/gc_collision_crn_dt005   (run from the repository root on the stored results; the first argument is a directory that does not exist, so only part (b) is printed; numbers with more than 12 digits are shown in scientific notation)
+
+=== (b) pathwise derivative with common random numbers, eps_t = centre ===
+
+g1 = min(s_T, 1): D_i = g'(s_T) d s_T / d eps_t
+  T = 300
+    nu       N     mean +- sem        FD slope (parabola, 11 pts)  z   | robust sigma  std    max|D|/sigma  Hill(k=50/150)  top1% share  batch exp. a (IQR~L^-a)
+    0.001    2000  -83723.249 +- 83392.735           n/a              |    22.758 3729436.49  7328652.9  0.69/0.63     0.99        -0.69
+    0.01     2000  -1986.279 +- 3881.656           n/a              |    41.617 173592.95   144206.2  0.69/0.56     0.83        -0.55
+  T = 1000
+    nu       N     mean +- sem        FD slope (parabola, 11 pts)  z   | robust sigma  std    max|D|/sigma  Hill(k=50/150)  top1% share  batch exp. a (IQR~L^-a)
+    0.001    2000  -5.9693e+12 +- 5.9821e+12           n/a              | 89386.226 2.6753e+14 133847657387.4  0.43/0.31     1.00        -1.90
+    0.01     2000  -4.7326e+12 +- 3.6069e+12           n/a              | 30498448.746 1.6131e+14 181149051.9  0.34/0.32     0.92        -1.95
+
+g2 = logistic((s_T - S_C) / S_W): D_i = g'(s_T) d s_T / d eps_t
+  T = 300
+    nu       N     mean +- sem        FD slope (parabola, 11 pts)  z   | robust sigma  std    max|D|/sigma  Hill(k=50/150)  top1% share  batch exp. a (IQR~L^-a)
+    0.001    2000  -58252.093 +- 55519.667           n/a              |    35.551 2482914.98  3118027.5  0.69/0.59     0.98        -0.43
+    0.01     2000  +12558.508 +- 11500.801           n/a              |    73.896 514331.45   259704.9  0.71/0.55     0.86        -0.79
+  T = 1000
+    nu       N     mean +- sem        FD slope (parabola, 11 pts)  z   | robust sigma  std    max|D|/sigma  Hill(k=50/150)  top1% share  batch exp. a (IQR~L^-a)
+    0.001    2000  -1.1297e+13 +- 1.1291e+13           n/a              | 15555.694 5.0496e+14 1.4517e+12  0.40/0.31     1.00        -1.60
+    0.01     2000  -960307867442.551 +- 4.6250e+12           n/a              | 5909201.133 2.0684e+14 1045902060.8  0.37/0.32     0.99        -2.41
+
+scale of the estimator against T: quantiles of |D1|, D1 = d s_T / d eps_t (g1), and the growth rate of each quantile,
+the slope of log(quantile) against T by least squares over all horizons (an exponential growth e^(gamma T) has gamma > 0 and a constant slope)
+  nu = 0.001: (2000 paths; the paths that are inside s < 1 at the horizon; lost fraction 0.000, 0.007)
+       T      median      90%         99%         99.9%       max         std       non-finite
+        300        15.8         792    2.95e+04    2.67e+05    1.67e+08    3.73e+06   0
+       1000    6.34e+04    2.78e+08    2.85e+11    2.47e+13     1.2e+16    2.68e+14   0
+    growth rate gamma (per unit time): median nan, 90% nan, 99% nan, 99.9% nan, max nan
+  nu = 0.01: (2000 paths; the paths that are inside s < 1 at the horizon; lost fraction 0.000, 0.001)
+       T      median      90%         99%         99.9%       max         std       non-finite
+        300          28    2.17e+03    1.25e+05    3.02e+06       6e+06    1.73e+05   0
+       1000    2.07e+07    6.26e+10    2.15e+14     1.5e+15    5.52e+15    1.61e+14   0
+    growth rate gamma (per unit time): median nan, 90% nan, 99% nan, 99.9% nan, max nan

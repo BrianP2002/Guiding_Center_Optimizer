@@ -1,0 +1,487 @@
+# produced by: python experiments/scripts/calibrate_reliability.py --cache results/calibration   (run from the repository root; reads the stored guiding-center runs in results/gc_official_nilss and results/gc_official_nilss_seed835; about 4 minutes on one core with a warm cache)
+Calibration of nilss_jax.reliability_report (command: python experiments/scripts/calibrate_reliability.py)
+thresholds: Hill index < 2 unreliable, < 4 caution; error-scaling exponent < 0.2 unreliable, < 0.35 caution (0.5 expected); lambda_1 T >= 20; ergodicity ratio <= 3
+
+======================================================================================================================
+lorenz63_rho28_T200: Lorenz 63, rho = 28
+  T = 200 per orbit, 32 orbits, nus = 1
+  lambda_1: median 0.9071 (min 0.8876, max 0.9301); lambda_1 T median 181.4
+  d<J>/drho: mean +1.017 +- 0.00021, median +1.017, 10-90% [+1.02, +1.02]
+  finite differences in rho (h = 1, 5 points, 32 copies of T = 2000; 2 s): +1.002 +- 0.001  (chi2/dof 15.4/3)
+    rho: NILSS mean +1.017 +- 0.00021 (+15.1 sigma from the reference), NILSS median +1.017 (+15.2 reference errors away)
+NILSS reliability report: 32 of 32 runs used
+    ok          number of runs          32
+    ok          resolved exponent       median lambda_1 = 0.9071, lambda_1 T = 181
+    ok          exponent spread         0 of 32 runs below 0.3 x the median exponent
+    ok          ergodicity              spread of <J> over the runs / sampling error of one run = 0.68
+    ok          tail of |v| [rho]       Hill index 10.25
+    ok          tail of segments [rho]  Hill index 28.80, top 1% of the segments carry 1% of sum |contributions|
+    ok          error scaling [rho]     spread ~ L^-0.83 (0.5 expected)
+  verdict: OK. No known failure signature found. This does not prove the sensitivity right: check the ones you rely on against finite differences (nilss_jax.fd).
+  Hill index of |v| [rho] for k = 50 / 100 / 300 / 1000: 19.51 / 15.35 / 11.98 / 8.67
+  numbers [rho]: Hill index of |v| 10.25, of segments 28.80, error-scaling exponent 0.83, top 1% of segments carry 1%
+  nus -> nus + 1 on 32 common orbits: OK  nus consistency: 32 orbits unchanged with one more tangent
+  nus -> nus + 1: mean sensitivity rho: +1.017 -> +1.017;  largest change of one orbit 0.000339
+  subsets of 8 orbits (200 draws): ok 1.00 caution 0.00 unreliable 0.00   checks flagging: none
+  subsets of 16 orbits (200 draws): ok 1.00 caution 0.00 unreliable 0.00   checks flagging: none
+  first 25% of the segments (T = 50): OK   flagged: none
+  first 50% of the segments (T = 100): OK   flagged: none
+
+======================================================================================================================
+lorenz63_rho28_T200 [first 16 orbits]: Lorenz 63, rho = 28
+  T = 200 per orbit, 16 orbits, nus = 1
+  lambda_1: median 0.9052 (min 0.8876, max 0.9175); lambda_1 T median 181
+  d<J>/drho: mean +1.017 +- 0.00031, median +1.017, 10-90% [+1.02, +1.02]
+  finite differences in rho (h = 1, 5 points, 32 copies of T = 2000; 0 s): +1.002 +- 0.001  (chi2/dof 15.4/3)
+    rho: NILSS mean +1.017 +- 0.00031 (+14.9 sigma from the reference), NILSS median +1.017 (+15.1 reference errors away)
+NILSS reliability report: 16 of 16 runs used
+    ok          number of runs          16
+    ok          resolved exponent       median lambda_1 = 0.9052, lambda_1 T = 181
+    ok          exponent spread         0 of 16 runs below 0.3 x the median exponent
+    ok          ergodicity              spread of <J> over the runs / sampling error of one run = 0.52
+    ok          tail of |v| [rho]       Hill index 10.23
+    ok          tail of segments [rho]  Hill index 28.91, top 1% of the segments carry 1% of sum |contributions|
+    ok          error scaling [rho]     spread ~ L^-0.86 (0.5 expected)
+  verdict: OK. No known failure signature found. This does not prove the sensitivity right: check the ones you rely on against finite differences (nilss_jax.fd).
+  Hill index of |v| [rho] for k = 50 / 100 / 300 / 1000: 16.91 / 13.69 / 10.38 / 5.97
+  numbers [rho]: Hill index of |v| 10.23, of segments 28.91, error-scaling exponent 0.86, top 1% of segments carry 1%
+  nus -> nus + 1 on 16 common orbits: OK  nus consistency: 16 orbits unchanged with one more tangent
+  nus -> nus + 1: mean sensitivity rho: +1.017 -> +1.017;  largest change of one orbit 0.000275
+  subsets of 8 orbits (200 draws): ok 1.00 caution 0.00 unreliable 0.00   checks flagging: none
+  first 25% of the segments (T = 50): OK   flagged: none
+  first 50% of the segments (T = 100): OK   flagged: none
+
+======================================================================================================================
+lorenz63_rho28_T1000: Lorenz 63, rho = 28
+  T = 1000 per orbit, 32 orbits, nus = 1
+  lambda_1: median 0.9054 (min 0.8949, max 0.9137); lambda_1 T median 905.4
+  d<J>/drho: mean +1.017 +- 7.8e-05, median +1.017, 10-90% [+1.02, +1.02]
+  finite differences in rho (h = 1, 5 points, 32 copies of T = 2000; 0 s): +1.002 +- 0.001  (chi2/dof 15.4/3)
+    rho: NILSS mean +1.017 +- 7.8e-05 (+15.2 sigma from the reference), NILSS median +1.017 (+15.2 reference errors away)
+NILSS reliability report: 32 of 32 runs used
+    ok          number of runs          32
+    ok          resolved exponent       median lambda_1 = 0.9054, lambda_1 T = 905
+    ok          exponent spread         0 of 32 runs below 0.3 x the median exponent
+    ok          ergodicity              spread of <J> over the runs / sampling error of one run = 0.79
+    ok          tail of |v| [rho]       Hill index 13.68
+    ok          tail of segments [rho]  Hill index 57.70, top 1% of the segments carry 1% of sum |contributions|
+    ok          error scaling [rho]     spread ~ L^-0.76 (0.5 expected)
+  verdict: OK. No known failure signature found. This does not prove the sensitivity right: check the ones you rely on against finite differences (nilss_jax.fd).
+  Hill index of |v| [rho] for k = 50 / 100 / 300 / 1000: 30.04 / 23.91 / 17.21 / 13.68
+  numbers [rho]: Hill index of |v| 13.68, of segments 57.70, error-scaling exponent 0.76, top 1% of segments carry 1%
+  nus -> nus + 1 on 32 common orbits: OK  nus consistency: 32 orbits unchanged with one more tangent
+  nus -> nus + 1: mean sensitivity rho: +1.017 -> +1.017;  largest change of one orbit 6.76e-05
+  subsets of 8 orbits (200 draws): ok 1.00 caution 0.00 unreliable 0.00   checks flagging: none
+  subsets of 16 orbits (200 draws): ok 1.00 caution 0.00 unreliable 0.00   checks flagging: none
+  first 25% of the segments (T = 250): OK   flagged: none
+  first 50% of the segments (T = 500): OK   flagged: none
+
+======================================================================================================================
+lorenz63_rho28_T1000 [first 16 orbits]: Lorenz 63, rho = 28
+  T = 1000 per orbit, 16 orbits, nus = 1
+  lambda_1: median 0.9049 (min 0.8949, max 0.9137); lambda_1 T median 904.9
+  d<J>/drho: mean +1.017 +- 0.00012, median +1.017, 10-90% [+1.02, +1.02]
+  finite differences in rho (h = 1, 5 points, 32 copies of T = 2000; 0 s): +1.002 +- 0.001  (chi2/dof 15.4/3)
+    rho: NILSS mean +1.017 +- 0.00012 (+15.2 sigma from the reference), NILSS median +1.017 (+15.3 reference errors away)
+NILSS reliability report: 16 of 16 runs used
+    ok          number of runs          16
+    ok          resolved exponent       median lambda_1 = 0.9049, lambda_1 T = 905
+    ok          exponent spread         0 of 16 runs below 0.3 x the median exponent
+    ok          ergodicity              spread of <J> over the runs / sampling error of one run = 0.85
+    ok          tail of |v| [rho]       Hill index 11.67
+    ok          tail of segments [rho]  Hill index 46.70, top 1% of the segments carry 1% of sum |contributions|
+    ok          error scaling [rho]     spread ~ L^-0.77 (0.5 expected)
+  verdict: OK. No known failure signature found. This does not prove the sensitivity right: check the ones you rely on against finite differences (nilss_jax.fd).
+  Hill index of |v| [rho] for k = 50 / 100 / 300 / 1000: 21.93 / 18.72 / 15.01 / 11.67
+  numbers [rho]: Hill index of |v| 11.67, of segments 46.70, error-scaling exponent 0.77, top 1% of segments carry 1%
+  nus -> nus + 1 on 16 common orbits: OK  nus consistency: 16 orbits unchanged with one more tangent
+  nus -> nus + 1: mean sensitivity rho: +1.017 -> +1.017;  largest change of one orbit 5.49e-05
+  subsets of 8 orbits (200 draws): ok 1.00 caution 0.00 unreliable 0.00   checks flagging: none
+  first 25% of the segments (T = 250): OK   flagged: none
+  first 50% of the segments (T = 500): OK   flagged: none
+
+======================================================================================================================
+lorenz63_rho35_T200: Lorenz 63, rho = 35
+  T = 200 per orbit, 32 orbits, nus = 1
+  lambda_1: median 1.054 (min 1.038, max 1.069); lambda_1 T median 210.7
+  d<J>/drho: mean +1.002 +- 0.00043, median +1.003, 10-90% [+1, +1]
+  finite differences in rho (h = 1, 5 points, 32 copies of T = 2000; 1 s): +1 +- 0.001  (chi2/dof 4.4/3)
+    rho: NILSS mean +1.002 +- 0.00043 (+1.4 sigma from the reference), NILSS median +1.003 (+2.2 reference errors away)
+NILSS reliability report: 32 of 32 runs used
+    ok          number of runs          32
+    ok          resolved exponent       median lambda_1 = 1.054, lambda_1 T = 211
+    ok          exponent spread         0 of 32 runs below 0.3 x the median exponent
+    ok          ergodicity              spread of <J> over the runs / sampling error of one run = 0.48
+    ok          tail of |v| [rho]       Hill index 10.25
+    ok          tail of segments [rho]  Hill index 13.61, top 1% of the segments carry 2% of sum |contributions|
+    ok          error scaling [rho]     spread ~ L^-0.90 (0.5 expected)
+  verdict: OK. No known failure signature found. This does not prove the sensitivity right: check the ones you rely on against finite differences (nilss_jax.fd).
+  Hill index of |v| [rho] for k = 50 / 100 / 300 / 1000: 24.10 / 18.98 / 12.24 / 9.02
+  numbers [rho]: Hill index of |v| 10.25, of segments 13.61, error-scaling exponent 0.90, top 1% of segments carry 2%
+  nus -> nus + 1 on 32 common orbits: OK  nus consistency: 32 orbits unchanged with one more tangent
+  nus -> nus + 1: mean sensitivity rho: +1.002 -> +1.002;  largest change of one orbit 0.000302
+  subsets of 8 orbits (200 draws): ok 1.00 caution 0.00 unreliable 0.00   checks flagging: none
+  subsets of 16 orbits (200 draws): ok 1.00 caution 0.00 unreliable 0.00   checks flagging: none
+  first 25% of the segments (T = 50): OK   flagged: none
+  first 50% of the segments (T = 100): OK   flagged: none
+
+======================================================================================================================
+lorenz63_rho35_T1000: Lorenz 63, rho = 35
+  T = 1000 per orbit, 32 orbits, nus = 1
+  lambda_1: median 1.051 (min 1.041, max 1.059); lambda_1 T median 1051
+  d<J>/drho: mean +0.9978 +- 0.0043, median +1.002, 10-90% [+1, +1.01]
+  finite differences in rho (h = 1, 5 points, 32 copies of T = 2000; 0 s): +1 +- 0.001  (chi2/dof 4.4/3)
+    rho: NILSS mean +0.9978 +- 0.0043 (-0.6 sigma from the reference), NILSS median +1.002 (+2.0 reference errors away)
+NILSS reliability report: 32 of 32 runs used
+    ok          number of runs          32
+    ok          resolved exponent       median lambda_1 = 1.051, lambda_1 T = 1.05e+03
+    ok          exponent spread         0 of 32 runs below 0.3 x the median exponent
+    ok          ergodicity              spread of <J> over the runs / sampling error of one run = 0.81
+    ok          tail of |v| [rho]       Hill index 12.43
+    ok          tail of segments [rho]  Hill index 9.22, top 1% of the segments carry 2% of sum |contributions|
+    ok          error scaling [rho]     spread ~ L^-0.79 (0.5 expected)
+  verdict: OK. No known failure signature found. This does not prove the sensitivity right: check the ones you rely on against finite differences (nilss_jax.fd).
+  Hill index of |v| [rho] for k = 50 / 100 / 300 / 1000: 3.94 / 6.74 / 12.16 / 12.43
+  numbers [rho]: Hill index of |v| 12.43, of segments 9.22, error-scaling exponent 0.79, top 1% of segments carry 2%
+  nus -> nus + 1 on 32 common orbits: OK  nus consistency: 32 orbits unchanged with one more tangent
+  nus -> nus + 1: mean sensitivity rho: +0.9978 -> +0.9977;  largest change of one orbit 6.03e-05
+  subsets of 8 orbits (200 draws): ok 1.00 caution 0.00 unreliable 0.00   checks flagging: none
+  subsets of 16 orbits (200 draws): ok 1.00 caution 0.00 unreliable 0.00   checks flagging: none
+  first 25% of the segments (T = 250): OK   flagged: none
+  first 50% of the segments (T = 500): OK   flagged: none
+
+======================================================================================================================
+lorenz63_rho40_T200: Lorenz 63, rho = 40
+  T = 200 per orbit, 32 orbits, nus = 1
+  lambda_1: median 1.142 (min 1.103, max 1.179); lambda_1 T median 228.4
+  d<J>/drho: mean +1.062 +- 0.051, median +0.9938, 10-90% [+0.983, +1.04]
+  finite differences in rho (h = 1, 5 points, 32 copies of T = 2000; 1 s): +0.9816 +- 0.00094  (chi2/dof 3.6/3)
+    rho: NILSS mean +1.062 +- 0.051 (+1.6 sigma from the reference), NILSS median +0.9938 (+12.8 reference errors away)
+NILSS reliability report: 32 of 32 runs used
+    ok          number of runs          32
+    ok          resolved exponent       median lambda_1 = 1.142, lambda_1 T = 228
+    ok          exponent spread         0 of 32 runs below 0.3 x the median exponent
+    ok          ergodicity              spread of <J> over the runs / sampling error of one run = 0.67
+    ok          tail of |v| [rho]       Hill index 6.04
+    ok          tail of segments [rho]  Hill index 5.37, top 1% of the segments carry 10% of sum |contributions|
+    ok          error scaling [rho]     spread ~ L^-0.46 (0.5 expected)
+  verdict: OK. No known failure signature found. This does not prove the sensitivity right: check the ones you rely on against finite differences (nilss_jax.fd).
+  Hill index of |v| [rho] for k = 50 / 100 / 300 / 1000: 1.19 / 2.08 / 4.42 / 6.43
+  numbers [rho]: Hill index of |v| 6.04, of segments 5.37, error-scaling exponent 0.46, top 1% of segments carry 10%
+  nus -> nus + 1 on 32 common orbits: OK  nus consistency: 32 orbits unchanged with one more tangent
+  nus -> nus + 1: mean sensitivity rho: +1.062 -> +1.062;  largest change of one orbit 0.000281
+  subsets of 8 orbits (200 draws): ok 0.88 caution 0.12 unreliable 0.00   checks flagging: tail segments 0.12, tail |v| 0.05
+  subsets of 16 orbits (200 draws): ok 0.98 caution 0.01 unreliable 0.00   checks flagging: tail segments 0.01
+  first 25% of the segments (T = 50): OK   flagged: none
+  first 50% of the segments (T = 100): OK   flagged: none
+
+======================================================================================================================
+lorenz63_rho40_T1000: Lorenz 63, rho = 40
+  T = 1000 per orbit, 32 orbits, nus = 1
+  lambda_1: median 1.141 (min 1.124, max 1.151); lambda_1 T median 1141
+  d<J>/drho: mean +0.9998 +- 0.013, median +0.9938, 10-90% [+0.977, +1.02]
+  finite differences in rho (h = 1, 5 points, 32 copies of T = 2000; 0 s): +0.9816 +- 0.00094  (chi2/dof 3.6/3)
+    rho: NILSS mean +0.9998 +- 0.013 (+1.3 sigma from the reference), NILSS median +0.9938 (+12.9 reference errors away)
+NILSS reliability report: 32 of 32 runs used
+    ok          number of runs          32
+    ok          resolved exponent       median lambda_1 = 1.141, lambda_1 T = 1.14e+03
+    ok          exponent spread         0 of 32 runs below 0.3 x the median exponent
+    ok          ergodicity              spread of <J> over the runs / sampling error of one run = 0.90
+    ok          tail of |v| [rho]       Hill index 5.45
+    CAUTION     tail of segments [rho]  Hill index 3.11, top 1% of the segments carry 5% of sum |contributions|
+    CAUTION     error scaling [rho]     spread ~ L^-0.31 (0.5 expected)   (the estimate converges much more slowly than 1/sqrt(T))
+  verdict: CAUTION. Treat the error bars as optimistic and compare with finite differences (nilss_jax.fd) before using the sensitivities.
+  Hill index of |v| [rho] for k = 50 / 100 / 300 / 1000: 0.95 / 1.21 / 2.46 / 5.45
+  numbers [rho]: Hill index of |v| 5.45, of segments 3.11, error-scaling exponent 0.31, top 1% of segments carry 5%
+  nus -> nus + 1 on 32 common orbits: OK  nus consistency: 32 orbits unchanged with one more tangent
+  nus -> nus + 1: mean sensitivity rho: +0.9998 -> +0.9998;  largest change of one orbit 5.6e-05
+  subsets of 8 orbits (200 draws): ok 0.91 caution 0.10 unreliable 0.00   checks flagging: scaling 0.10
+  subsets of 16 orbits (200 draws): ok 0.97 caution 0.03 unreliable 0.00   checks flagging: scaling 0.03
+  first 25% of the segments (T = 250): OK   flagged: none
+  first 50% of the segments (T = 500): OK   flagged: none
+
+======================================================================================================================
+lorenz96: Lorenz 96 (8 variables, F = 8, J = mean u^2); exponents [ 1.616e+00  3.819e-01  7.295e-05 -4.604e-01 -9.552e-01 -1.510e+00
+ -2.502e+00 -4.570e+00]
+  T = 500 per orbit, 32 orbits, nus = 2
+  lambda_1: median 1.614 (min 1.494, max 1.736); lambda_1 T median 807.2
+  d<J>/dF: mean +3.608 +- 1.3, median +3.628, 10-90% [-0.0625, +6.21]
+  finite differences in F (h = 0.5, 5 points, 32 copies of T = 2000; 11 s): +3.687 +- 0.0093  (chi2/dof 27.5/3)
+    F: NILSS mean +3.608 +- 1.3 (-0.1 sigma from the reference), NILSS median +3.628 (-6.4 reference errors away)
+NILSS reliability report: 32 of 32 runs used
+    ok          number of runs        32
+    ok          resolved exponent     median lambda_1 = 1.614, lambda_1 T = 807
+    ok          exponent spread       0 of 32 runs below 0.3 x the median exponent
+    ok          ergodicity            spread of <J> over the runs / sampling error of one run = 1.06
+    UNRELIABLE  tail of |v| [F]       Hill index 1.17   (index < 2: infinite variance, the standard errors are meaningless)
+    UNRELIABLE  tail of segments [F]  Hill index 1.12, top 1% of the segments carry 41% of sum |contributions|
+    UNRELIABLE  error scaling [F]     spread ~ L^-0.08 (0.5 expected)   (the estimate converges much more slowly than 1/sqrt(T))
+  verdict: UNRELIABLE. The sample mean has infinite variance or the assumptions are not met: the printed standard errors are meaningless and the values can be biased. Use NILSS output here only as a hint and verify with ensemble finite differences (nilss_jax.fd).
+  Hill index of |v| [F] for k = 50 / 100 / 300 / 1000: 1.44 / 1.52 / 1.35 / 1.17
+  numbers [F]: Hill index of |v| 1.17, of segments 1.12, error-scaling exponent 0.08, top 1% of segments carry 41%
+  nus -> nus + 1 on 32 common orbits: OK  nus consistency: 32 orbits unchanged with one more tangent
+  nus -> nus + 1: mean sensitivity F: +3.608 -> +3.526;  largest change of one orbit 1.96
+  subsets of 8 orbits (200 draws): ok 0.00 caution 0.00 unreliable 1.00   checks flagging: scaling 1.00, tail segments 1.00, tail |v| 1.00
+  subsets of 16 orbits (200 draws): ok 0.00 caution 0.00 unreliable 1.00   checks flagging: scaling 1.00, tail segments 1.00, tail |v| 1.00
+  first 25% of the segments (T = 125): UNRELIABLE   flagged: tail of |v| [F]: unreliable, tail of segments [F]: unreliable, error scaling [F]: unreliable
+  first 50% of the segments (T = 250): UNRELIABLE   flagged: tail of |v| [F]: unreliable, tail of segments [F]: unreliable, error scaling [F]: unreliable
+
+======================================================================================================================
+lorenz96 [first 16 orbits]: Lorenz 96 (8 variables, F = 8, J = mean u^2); exponents [ 1.616e+00  3.819e-01  7.295e-05 -4.604e-01 -9.552e-01 -1.510e+00
+ -2.502e+00 -4.570e+00]
+  T = 500 per orbit, 16 orbits, nus = 2
+  lambda_1: median 1.595 (min 1.494, max 1.736); lambda_1 T median 797.7
+  d<J>/dF: mean +3.612 +- 2.7, median +3.432, 10-90% [-2.64, +5.89]
+  finite differences in F (h = 0.5, 5 points, 32 copies of T = 2000; 0 s): +3.687 +- 0.0093  (chi2/dof 27.5/3)
+    F: NILSS mean +3.612 +- 2.7 (-0.0 sigma from the reference), NILSS median +3.432 (-27.4 reference errors away)
+NILSS reliability report: 16 of 16 runs used
+    ok          number of runs        16
+    ok          resolved exponent     median lambda_1 = 1.595, lambda_1 T = 798
+    ok          exponent spread       0 of 16 runs below 0.3 x the median exponent
+    ok          ergodicity            spread of <J> over the runs / sampling error of one run = 0.91
+    UNRELIABLE  tail of |v| [F]       Hill index 0.97   (index < 2: infinite variance, the standard errors are meaningless)
+    UNRELIABLE  tail of segments [F]  Hill index 0.96, top 1% of the segments carry 46% of sum |contributions|
+    UNRELIABLE  error scaling [F]     spread ~ L^-0.09 (0.5 expected)   (the estimate converges much more slowly than 1/sqrt(T))
+  verdict: UNRELIABLE. The sample mean has infinite variance or the assumptions are not met: the printed standard errors are meaningless and the values can be biased. Use NILSS output here only as a hint and verify with ensemble finite differences (nilss_jax.fd).
+  Hill index of |v| [F] for k = 50 / 100 / 300 / 1000: 1.42 / 1.22 / 1.18 / 0.94
+  numbers [F]: Hill index of |v| 0.97, of segments 0.96, error-scaling exponent 0.09, top 1% of segments carry 46%
+  nus -> nus + 1 on 16 common orbits: OK  nus consistency: 16 orbits unchanged with one more tangent
+  nus -> nus + 1: mean sensitivity F: +3.612 -> +3.503;  largest change of one orbit 1.96
+  subsets of 8 orbits (200 draws): ok 0.00 caution 0.00 unreliable 1.00   checks flagging: scaling 1.00, tail segments 1.00, tail |v| 1.00
+  first 25% of the segments (T = 125): UNRELIABLE   flagged: tail of |v| [F]: unreliable, tail of segments [F]: unreliable, error scaling [F]: unreliable
+  first 50% of the segments (T = 250): UNRELIABLE   flagged: tail of |v| [F]: unreliable, tail of segments [F]: unreliable, error scaling [F]: unreliable
+
+======================================================================================================================
+rossler: Roessler (a = b = 0.2, c = 5.7, J = z, parameter c)
+  T = 1000 per orbit, 32 orbits, nus = 1
+  lambda_1: median 0.07086 (min 0.06328, max 0.08171); lambda_1 T median 70.86
+  d<J>/dc: mean +0.06948 +- 0.015, median +0.04915, 10-90% [+0.033, +0.0898]
+  finite differences in c (h = 0.05, 5 points, 32 copies of T = 4000; 2 s): +0.09465 +- 0.0055  (chi2/dof 355.5/3)
+    c: NILSS mean +0.06948 +- 0.015 (-1.6 sigma from the reference), NILSS median +0.04915 (-8.2 reference errors away)
+NILSS reliability report: 32 of 32 runs used
+    ok          number of runs        32
+    ok          resolved exponent     median lambda_1 = 0.07086, lambda_1 T = 70.9
+    ok          exponent spread       0 of 32 runs below 0.3 x the median exponent
+    ok          ergodicity            spread of <J> over the runs / sampling error of one run = 0.48
+    UNRELIABLE  tail of |v| [c]       Hill index 1.20   (index < 2: infinite variance, the standard errors are meaningless)
+    UNRELIABLE  tail of segments [c]  Hill index 1.21, top 1% of the segments carry 48% of sum |contributions|
+    UNRELIABLE  error scaling [c]     spread ~ L^-0.08 (0.5 expected)   (the estimate converges much more slowly than 1/sqrt(T))
+  verdict: UNRELIABLE. The sample mean has infinite variance or the assumptions are not met: the printed standard errors are meaningless and the values can be biased. Use NILSS output here only as a hint and verify with ensemble finite differences (nilss_jax.fd).
+  Hill index of |v| [c] for k = 50 / 100 / 300 / 1000: 1.37 / 1.23 / 1.09 / 1.20
+  numbers [c]: Hill index of |v| 1.20, of segments 1.21, error-scaling exponent 0.08, top 1% of segments carry 48%
+  subsets of 8 orbits (200 draws): ok 0.00 caution 0.00 unreliable 1.00   checks flagging: scaling 1.00, tail segments 1.00, tail |v| 1.00
+  subsets of 16 orbits (200 draws): ok 0.00 caution 0.00 unreliable 1.00   checks flagging: scaling 1.00, tail segments 1.00, tail |v| 1.00
+  first 25% of the segments (T = 250): UNRELIABLE   flagged: number of runs: caution, tail of |v| [c]: caution, tail of segments [c]: unreliable, error scaling [c]: unreliable
+  first 50% of the segments (T = 500): UNRELIABLE   flagged: tail of |v| [c]: unreliable, tail of segments [c]: unreliable, error scaling [c]: unreliable
+
+======================================================================================================================
+rossler [first 16 orbits]: Roessler (a = b = 0.2, c = 5.7, J = z, parameter c)
+  T = 1000 per orbit, 16 orbits, nus = 1
+  lambda_1: median 0.06998 (min 0.06328, max 0.08057); lambda_1 T median 69.98
+  d<J>/dc: mean +0.09142 +- 0.027, median +0.04783, 10-90% [+0.0347, +0.258]
+  finite differences in c (h = 0.05, 5 points, 32 copies of T = 4000; 0 s): +0.09465 +- 0.0055  (chi2/dof 355.5/3)
+    c: NILSS mean +0.09142 +- 0.027 (-0.1 sigma from the reference), NILSS median +0.04783 (-8.5 reference errors away)
+NILSS reliability report: 16 of 16 runs used
+    ok          number of runs        16
+    ok          resolved exponent     median lambda_1 = 0.06998, lambda_1 T = 70
+    ok          exponent spread       0 of 16 runs below 0.3 x the median exponent
+    ok          ergodicity            spread of <J> over the runs / sampling error of one run = 0.46
+    UNRELIABLE  tail of |v| [c]       Hill index 1.01   (index < 2: infinite variance, the standard errors are meaningless)
+    UNRELIABLE  tail of segments [c]  Hill index 1.15, top 1% of the segments carry 55% of sum |contributions|
+    UNRELIABLE  error scaling [c]     spread ~ L^-0.03 (0.5 expected)   (the estimate converges much more slowly than 1/sqrt(T))
+  verdict: UNRELIABLE. The sample mean has infinite variance or the assumptions are not met: the printed standard errors are meaningless and the values can be biased. Use NILSS output here only as a hint and verify with ensemble finite differences (nilss_jax.fd).
+  Hill index of |v| [c] for k = 50 / 100 / 300 / 1000: 1.29 / 1.11 / 1.02 / 1.06
+  numbers [c]: Hill index of |v| 1.01, of segments 1.15, error-scaling exponent 0.03, top 1% of segments carry 55%
+  subsets of 8 orbits (200 draws): ok 0.00 caution 0.00 unreliable 1.00   checks flagging: scaling 1.00, tail segments 1.00, tail |v| 1.00
+  first 25% of the segments (T = 250): UNRELIABLE   flagged: number of runs: caution, tail of |v| [c]: caution, tail of segments [c]: unreliable, error scaling [c]: unreliable
+  first 50% of the segments (T = 500): UNRELIABLE   flagged: tail of |v| [c]: unreliable, tail of segments [c]: unreliable, error scaling [c]: unreliable
+
+======================================================================================================================
+gc_draw581: guiding-center flow, chaotic sea of draw 581 (stored runs, parameters eps_t, eps_m, kappa, iota)
+  T = 200000 per orbit, 35 orbits, nus = 1
+  lambda_1: median 0.005893 (min 0.003878, max 0.006723); lambda_1 T median 1179
+  d<J>/deps_t: mean -0.4109 +- 0.23, median -0.3392, 10-90% [-0.613, +0.308]
+  d<J>/deps_m: mean -2.129 +- 0.6, median -2.079, 10-90% [-2.92, -0.516]
+  d<J>/dkappa: mean +1.001 +- 0.051, median +0.9638, 10-90% [+0.843, +1.13]
+  d<J>/diota: mean +0.2675 +- 0.02, median +0.2446, 10-90% [+0.217, +0.307]
+  finite differences of the studies (docs/findings.md): eps_t +1.75 +- 0.1, eps_m +1.8 +- 0.3, kappa +0.45 +- 0.1, iota -0.05 +- 0.03
+    eps_t: NILSS mean -0.4109 +- 0.23 (-8.7 sigma from the reference), NILSS median -0.3392 (-20.9 reference errors away)
+    eps_m: NILSS mean -2.129 +- 0.6 (-5.9 sigma from the reference), NILSS median -2.079 (-12.9 reference errors away)
+    kappa: NILSS mean +1.001 +- 0.051 (+4.9 sigma from the reference), NILSS median +0.9638 (+5.1 reference errors away)
+    iota: NILSS mean +0.2675 +- 0.02 (+8.9 sigma from the reference), NILSS median +0.2446 (+9.8 reference errors away)
+NILSS reliability report: 35 of 35 runs used
+    ok          number of runs            35
+    ok          resolved exponent         median lambda_1 = 0.005893, lambda_1 T = 1.18e+03
+    ok          exponent spread           0 of 35 runs below 0.3 x the median exponent
+    skipped     ergodicity                spread of <J> over the runs / sampling error of one run = nan
+    UNRELIABLE  tail of |v| [eps_t]       Hill index 1.01   (index < 2: infinite variance, the standard errors are meaningless)
+    UNRELIABLE  tail of segments [eps_t]  Hill index 1.02, top 1% of the segments carry 62% of sum |contributions|
+    UNRELIABLE  error scaling [eps_t]     spread ~ L^-0.15 (0.5 expected)   (the estimate converges much more slowly than 1/sqrt(T))
+    UNRELIABLE  tail of |v| [eps_m]       Hill index 1.04   (index < 2: infinite variance, the standard errors are meaningless)
+    UNRELIABLE  tail of segments [eps_m]  Hill index 1.03, top 1% of the segments carry 59% of sum |contributions|
+    UNRELIABLE  error scaling [eps_m]     spread ~ L^-0.17 (0.5 expected)   (the estimate converges much more slowly than 1/sqrt(T))
+    UNRELIABLE  tail of |v| [kappa]       Hill index 1.00   (index < 2: infinite variance, the standard errors are meaningless)
+    UNRELIABLE  tail of segments [kappa]  Hill index 1.17, top 1% of the segments carry 34% of sum |contributions|
+    CAUTION     error scaling [kappa]     spread ~ L^-0.21 (0.5 expected)   (the estimate converges much more slowly than 1/sqrt(T))
+    UNRELIABLE  tail of |v| [iota]        Hill index 0.99   (index < 2: infinite variance, the standard errors are meaningless)
+    UNRELIABLE  tail of segments [iota]   Hill index 1.16, top 1% of the segments carry 43% of sum |contributions|
+    CAUTION     error scaling [iota]      spread ~ L^-0.27 (0.5 expected)   (the estimate converges much more slowly than 1/sqrt(T))
+  verdict: UNRELIABLE. The sample mean has infinite variance or the assumptions are not met: the printed standard errors are meaningless and the values can be biased. Use NILSS output here only as a hint and verify with ensemble finite differences (nilss_jax.fd).
+  Hill index of |v| [eps_t] for k = 50 / 100 / 300 / 1000: 1.04 / 0.98 / 1.03 / 1.01
+  numbers [eps_t]: Hill index of |v| 1.01, of segments 1.02, error-scaling exponent 0.15, top 1% of segments carry 62%
+  numbers [eps_m]: Hill index of |v| 1.04, of segments 1.03, error-scaling exponent 0.17, top 1% of segments carry 59%
+  numbers [kappa]: Hill index of |v| 1.00, of segments 1.17, error-scaling exponent 0.21, top 1% of segments carry 34%
+  numbers [iota]: Hill index of |v| 0.99, of segments 1.16, error-scaling exponent 0.27, top 1% of segments carry 43%
+  nus -> nus + 1 on 9 common orbits: CAUTION  nus consistency [eps_t]: 1 of 9 orbits change by more than 3 robust sigma with one more tangent
+  nus -> nus + 1 on 9 common orbits: CAUTION  nus consistency [eps_m]: 1 of 9 orbits change by more than 3 robust sigma with one more tangent
+  nus -> nus + 1 on 9 common orbits: CAUTION  nus consistency [kappa]: 4 of 9 orbits change by more than 3 robust sigma with one more tangent
+  nus -> nus + 1 on 9 common orbits: CAUTION  nus consistency [iota]: 2 of 9 orbits change by more than 3 robust sigma with one more tangent
+  nus -> nus + 1: mean sensitivity eps_t: -0.8826 -> +0.3732, eps_m: -3.423 -> -0.1149, kappa: +1.146 -> +0.9727, iota: +0.3219 -> +0.2517;  largest change of one orbit 26.7
+  subsets of 8 orbits (200 draws): ok 0.00 caution 0.00 unreliable 1.00   checks flagging: scaling 1.00, tail segments 1.00, tail |v| 1.00
+  subsets of 16 orbits (200 draws): ok 0.00 caution 0.00 unreliable 1.00   checks flagging: scaling 1.00, tail segments 1.00, tail |v| 1.00
+  first 25% of the segments (T = 50000): UNRELIABLE   flagged: tail of |v| [eps_t]: unreliable, tail of segments [eps_t]: unreliable, error scaling [eps_t]: unreliable, tail of |v| [eps_m]: unreliable, tail of segments [eps_m]: unreliable, error scaling [eps_m]: caution, tail of |v| [kappa]: unreliable, tail of segments [kappa]: unreliable, error scaling [kappa]: caution, tail of |v| [iota]: unreliable, tail of segments [iota]: unreliable, error scaling [iota]: caution
+  first 50% of the segments (T = 100000): UNRELIABLE   flagged: tail of |v| [eps_t]: unreliable, tail of segments [eps_t]: unreliable, error scaling [eps_t]: unreliable, tail of |v| [eps_m]: unreliable, tail of segments [eps_m]: unreliable, error scaling [eps_m]: unreliable, tail of |v| [kappa]: unreliable, tail of segments [kappa]: unreliable, error scaling [kappa]: unreliable, tail of |v| [iota]: unreliable, tail of segments [iota]: unreliable, error scaling [iota]: caution
+
+======================================================================================================================
+gc_draw835: guiding-center flow, chaotic sea of draw 835 (stored runs, parameters eps_2, eps_h, kappa, iota)
+  T = 200000 per orbit, 48 orbits, nus = 1
+  lambda_1: median 0.003054 (min 0.002548, max 0.003651); lambda_1 T median 610.8
+  d<J>/deps_2: mean +0.9347 +- 0.32, median +0.7557, 10-90% [-0.43, +2.16]
+  d<J>/deps_h: mean -0.5725 +- 0.019, median -0.5617, 10-90% [-0.664, -0.448]
+  d<J>/dkappa: mean +0.2216 +- 0.032, median +0.2378, 10-90% [+0.0663, +0.369]
+  d<J>/diota: mean +0.07402 +- 0.041, median +0.07883, 10-90% [-0.123, +0.26]
+  finite differences of the studies (docs/findings.md): eps_2 +0.8 +- 0.05, eps_h -0.86 +- 0.03, kappa +0.01 +- 0.006, iota +0.11 +- 0.005
+    eps_2: NILSS mean +0.9347 +- 0.32 (+0.4 sigma from the reference), NILSS median +0.7557 (-0.9 reference errors away)
+    eps_h: NILSS mean -0.5725 +- 0.019 (+8.1 sigma from the reference), NILSS median -0.5617 (+9.9 reference errors away)
+    kappa: NILSS mean +0.2216 +- 0.032 (+6.6 sigma from the reference), NILSS median +0.2378 (+38.0 reference errors away)
+    iota: NILSS mean +0.07402 +- 0.041 (-0.9 sigma from the reference), NILSS median +0.07883 (-6.2 reference errors away)
+NILSS reliability report: 48 of 48 runs used
+    ok          number of runs            48
+    ok          resolved exponent         median lambda_1 = 0.003054, lambda_1 T = 611
+    ok          exponent spread           0 of 48 runs below 0.3 x the median exponent
+    skipped     ergodicity                spread of <J> over the runs / sampling error of one run = nan
+    UNRELIABLE  tail of |v| [eps_2]       Hill index 0.96   (index < 2: infinite variance, the standard errors are meaningless)
+    UNRELIABLE  tail of segments [eps_2]  Hill index 0.95, top 1% of the segments carry 45% of sum |contributions|
+    UNRELIABLE  error scaling [eps_2]     spread ~ L^-0.17 (0.5 expected)   (the estimate converges much more slowly than 1/sqrt(T))
+    UNRELIABLE  tail of |v| [eps_h]       Hill index 1.09   (index < 2: infinite variance, the standard errors are meaningless)
+    UNRELIABLE  tail of segments [eps_h]  Hill index 1.32, top 1% of the segments carry 16% of sum |contributions|
+    CAUTION     error scaling [eps_h]     spread ~ L^-0.27 (0.5 expected)   (the estimate converges much more slowly than 1/sqrt(T))
+    UNRELIABLE  tail of |v| [kappa]       Hill index 1.09   (index < 2: infinite variance, the standard errors are meaningless)
+    UNRELIABLE  tail of segments [kappa]  Hill index 1.02, top 1% of the segments carry 35% of sum |contributions|
+    UNRELIABLE  error scaling [kappa]     spread ~ L^-0.14 (0.5 expected)   (the estimate converges much more slowly than 1/sqrt(T))
+    UNRELIABLE  tail of |v| [iota]        Hill index 1.04   (index < 2: infinite variance, the standard errors are meaningless)
+    UNRELIABLE  tail of segments [iota]   Hill index 1.00, top 1% of the segments carry 39% of sum |contributions|
+    CAUTION     error scaling [iota]      spread ~ L^-0.27 (0.5 expected)   (the estimate converges much more slowly than 1/sqrt(T))
+  verdict: UNRELIABLE. The sample mean has infinite variance or the assumptions are not met: the printed standard errors are meaningless and the values can be biased. Use NILSS output here only as a hint and verify with ensemble finite differences (nilss_jax.fd).
+  Hill index of |v| [eps_2] for k = 50 / 100 / 300 / 1000: 1.53 / 1.35 / 1.14 / 0.96
+  numbers [eps_2]: Hill index of |v| 0.96, of segments 0.95, error-scaling exponent 0.17, top 1% of segments carry 45%
+  numbers [eps_h]: Hill index of |v| 1.09, of segments 1.32, error-scaling exponent 0.27, top 1% of segments carry 16%
+  numbers [kappa]: Hill index of |v| 1.09, of segments 1.02, error-scaling exponent 0.14, top 1% of segments carry 35%
+  numbers [iota]: Hill index of |v| 1.04, of segments 1.00, error-scaling exponent 0.27, top 1% of segments carry 39%
+  nus -> nus + 1 on 12 common orbits: CAUTION  nus consistency [eps_2]: 2 of 12 orbits change by more than 3 robust sigma with one more tangent
+  nus -> nus + 1 on 12 common orbits: CAUTION  nus consistency [eps_h]: 2 of 12 orbits change by more than 3 robust sigma with one more tangent
+  nus -> nus + 1 on 12 common orbits: CAUTION  nus consistency [kappa]: 3 of 12 orbits change by more than 3 robust sigma with one more tangent
+  nus -> nus + 1 on 12 common orbits: CAUTION  nus consistency [iota]: 2 of 12 orbits change by more than 3 robust sigma with one more tangent
+  nus -> nus + 1: mean sensitivity eps_2: +0.1603 -> +0.8427, eps_h: -0.601 -> -0.5056, kappa: +0.1438 -> +0.2731, iota: -0.02641 -> +0.07171;  largest change of one orbit 4.56
+  subsets of 8 orbits (200 draws): ok 0.00 caution 0.00 unreliable 1.00   checks flagging: scaling 1.00, tail segments 1.00, tail |v| 1.00
+  subsets of 16 orbits (200 draws): ok 0.00 caution 0.00 unreliable 1.00   checks flagging: scaling 1.00, tail segments 1.00, tail |v| 1.00
+  first 25% of the segments (T = 50000): UNRELIABLE   flagged: tail of |v| [eps_2]: unreliable, tail of segments [eps_2]: unreliable, error scaling [eps_2]: caution, tail of |v| [eps_h]: unreliable, tail of segments [eps_h]: caution, error scaling [eps_h]: caution, tail of |v| [kappa]: unreliable, tail of segments [kappa]: unreliable, error scaling [kappa]: caution, tail of |v| [iota]: unreliable, tail of segments [iota]: unreliable
+  first 50% of the segments (T = 100000): UNRELIABLE   flagged: tail of |v| [eps_2]: unreliable, tail of segments [eps_2]: unreliable, error scaling [eps_2]: unreliable, tail of |v| [eps_h]: unreliable, tail of segments [eps_h]: caution, error scaling [eps_h]: caution, tail of |v| [kappa]: unreliable, tail of segments [kappa]: unreliable, error scaling [kappa]: unreliable, tail of |v| [iota]: unreliable, tail of segments [iota]: unreliable, error scaling [iota]: caution
+
+======================================================================================================================
+synthetic_gaussian: synthetic: |v| = |Gauss| + 1, Gaussian contributions
+  T = 500 per orbit, 16 orbits, nus = 1
+  lambda_1: median 0.9 (min 0.9, max 0.9); lambda_1 T median 450
+  d<J>/dp: mean +0.1438 +- 0.082, median +0.1376, 10-90% [-0.215, +0.525]
+NILSS reliability report: 16 of 16 runs used
+    ok          number of runs        16
+    ok          resolved exponent     median lambda_1 = 0.9, lambda_1 T = 450
+    ok          exponent spread       0 of 16 runs below 0.3 x the median exponent
+    ok          ergodicity            spread of <J> over the runs / sampling error of one run = 1.01
+    ok          tail of |v| [p]       Hill index 8.50
+    ok          tail of segments [p]  Hill index 5.63, top 1% of the segments carry 4% of sum |contributions|
+    ok          error scaling [p]     spread ~ L^-0.52 (0.5 expected)
+  verdict: OK. No known failure signature found. This does not prove the sensitivity right: check the ones you rely on against finite differences (nilss_jax.fd).
+  Hill index of |v| [p] for k = 50 / 100 / 300 / 1000: 20.14 / 15.03 / 11.06 / 7.83
+  numbers [p]: Hill index of |v| 8.50, of segments 5.63, error-scaling exponent 0.52, top 1% of segments carry 4%
+  subsets of 8 orbits (200 draws): ok 1.00 caution 0.00 unreliable 0.00   checks flagging: none
+  first 25% of the segments (T = 125): OK   flagged: none
+  first 50% of the segments (T = 250): OK   flagged: none
+
+======================================================================================================================
+synthetic_pareto1.5: synthetic: Pareto tails, index 1.5
+  T = 500 per orbit, 16 orbits, nus = 1
+  lambda_1: median 0.9 (min 0.9, max 0.9); lambda_1 T median 450
+  d<J>/dp: mean +0.7365 +- 1.3, median -0.04192, 10-90% [-3.36, +3.36]
+NILSS reliability report: 16 of 16 runs used
+    ok          number of runs        16
+    ok          resolved exponent     median lambda_1 = 0.9, lambda_1 T = 450
+    ok          exponent spread       0 of 16 runs below 0.3 x the median exponent
+    ok          ergodicity            spread of <J> over the runs / sampling error of one run = 1.14
+    UNRELIABLE  tail of |v| [p]       Hill index 1.49   (index < 2: infinite variance, the standard errors are meaningless)
+    UNRELIABLE  tail of segments [p]  Hill index 1.49, top 1% of the segments carry 21% of sum |contributions|
+    CAUTION     error scaling [p]     spread ~ L^-0.32 (0.5 expected)   (the estimate converges much more slowly than 1/sqrt(T))
+  verdict: UNRELIABLE. The sample mean has infinite variance or the assumptions are not met: the printed standard errors are meaningless and the values can be biased. Use NILSS output here only as a hint and verify with ensemble finite differences (nilss_jax.fd).
+  Hill index of |v| [p] for k = 50 / 100 / 300 / 1000: 1.35 / 1.34 / 1.44 / 1.47
+  numbers [p]: Hill index of |v| 1.49, of segments 1.49, error-scaling exponent 0.32, top 1% of segments carry 21%
+  subsets of 8 orbits (200 draws): ok 0.00 caution 0.00 unreliable 1.00   checks flagging: scaling 0.84, tail segments 1.00, tail |v| 1.00
+  first 25% of the segments (T = 125): UNRELIABLE   flagged: tail of |v| [p]: unreliable, tail of segments [p]: unreliable
+  first 50% of the segments (T = 250): UNRELIABLE   flagged: tail of |v| [p]: unreliable, tail of segments [p]: unreliable, error scaling [p]: caution
+
+======================================================================================================================
+synthetic_pareto1: synthetic: Pareto tails, index 1 (|v| and contributions)
+  T = 500 per orbit, 16 orbits, nus = 1
+  lambda_1: median 0.9 (min 0.9, max 0.9); lambda_1 T median 450
+  d<J>/dp: mean +24.05 +- 31, median +2.423, 10-90% [-51.8, +30.9]
+NILSS reliability report: 16 of 16 runs used
+    ok          number of runs        16
+    ok          resolved exponent     median lambda_1 = 0.9, lambda_1 T = 450
+    ok          exponent spread       0 of 16 runs below 0.3 x the median exponent
+    ok          ergodicity            spread of <J> over the runs / sampling error of one run = 1.14
+    UNRELIABLE  tail of |v| [p]       Hill index 0.99   (index < 2: infinite variance, the standard errors are meaningless)
+    UNRELIABLE  tail of segments [p]  Hill index 0.99, top 1% of the segments carry 64% of sum |contributions|
+    UNRELIABLE  error scaling [p]     spread ~ L^-0.03 (0.5 expected)   (the estimate converges much more slowly than 1/sqrt(T))
+  verdict: UNRELIABLE. The sample mean has infinite variance or the assumptions are not met: the printed standard errors are meaningless and the values can be biased. Use NILSS output here only as a hint and verify with ensemble finite differences (nilss_jax.fd).
+  Hill index of |v| [p] for k = 50 / 100 / 300 / 1000: 0.90 / 0.89 / 0.96 / 0.98
+  numbers [p]: Hill index of |v| 0.99, of segments 0.99, error-scaling exponent 0.03, top 1% of segments carry 64%
+  subsets of 8 orbits (200 draws): ok 0.00 caution 0.00 unreliable 1.00   checks flagging: scaling 1.00, tail segments 1.00, tail |v| 1.00
+  first 25% of the segments (T = 125): UNRELIABLE   flagged: tail of |v| [p]: unreliable, tail of segments [p]: unreliable, error scaling [p]: unreliable
+  first 50% of the segments (T = 250): UNRELIABLE   flagged: tail of |v| [p]: unreliable, tail of segments [p]: unreliable, error scaling [p]: unreliable
+
+======================================================================================================================
+SUMMARY (alpha_v, alpha_seg: smallest Hill index over the parameters; scal: smallest error-scaling exponent;
+         |NILSS-FD|: largest deviation of the NILSS mean from the finite-difference reference, in combined standard errors)
+case                                             T orbits  verdict     alpha_v alpha_seg  scal  |NILSS-FD|   subsets of 8: ok/caution/unreliable   25%  50%
+lorenz63_rho28_T200                            200     32  ok            10.25     28.80  0.83      15.1sg   1.00 / 0.00 / 0.00   ok   ok
+lorenz63_rho28_T200 [first 16 orbits]          200     16  ok            10.23     28.91  0.86      14.9sg   1.00 / 0.00 / 0.00   ok   ok
+lorenz63_rho28_T1000                          1000     32  ok            13.68     57.70  0.76      15.2sg   1.00 / 0.00 / 0.00   ok   ok
+lorenz63_rho28_T1000 [first 16 orbits]        1000     16  ok            11.67     46.70  0.77      15.2sg   1.00 / 0.00 / 0.00   ok   ok
+lorenz63_rho35_T200                            200     32  ok            10.25     13.61  0.90       1.4sg   1.00 / 0.00 / 0.00   ok   ok
+lorenz63_rho35_T1000                          1000     32  ok            12.43      9.22  0.79       0.6sg   1.00 / 0.00 / 0.00   ok   ok
+lorenz63_rho40_T200                            200     32  ok             6.04      5.37  0.46       1.6sg   0.88 / 0.12 / 0.00   ok   ok
+lorenz63_rho40_T1000                          1000     32  caution        5.45      3.11  0.31       1.3sg   0.91 / 0.10 / 0.00   ok   ok
+lorenz96                                       500     32  unreliable     1.17      1.12  0.08       0.1sg   0.00 / 0.00 / 1.00   unre unre
+lorenz96 [first 16 orbits]                     500     16  unreliable     0.97      0.96  0.09       0.0sg   0.00 / 0.00 / 1.00   unre unre
+rossler                                       1000     32  unreliable     1.20      1.21  0.08       1.6sg   0.00 / 0.00 / 1.00   unre unre
+rossler [first 16 orbits]                     1000     16  unreliable     1.01      1.15  0.03       0.1sg   0.00 / 0.00 / 1.00   unre unre
+gc_draw581                                  200000     35  unreliable     0.99      1.02  0.15       8.9sg   0.00 / 0.00 / 1.00   unre unre
+gc_draw835                                  200000     48  unreliable     0.96      0.95  0.14       8.1sg   0.00 / 0.00 / 1.00   unre unre
+synthetic_gaussian                             500     16  ok             8.50      5.63  0.52       nansg   1.00 / 0.00 / 0.00   ok   ok
+synthetic_pareto1.5                            500     16  unreliable     1.49      1.49  0.32       nansg   0.00 / 0.00 / 1.00   unre unre
+synthetic_pareto1                              500     16  unreliable     0.99      0.99  0.03       nansg   0.00 / 0.00 / 1.00   unre unre
+
+FALSE ALARMS (well-behaved cases not OK): none at full size
+  lorenz63_rho28_T200: subsets of 8: flagged (caution or unreliable) in 0.0% of the draws
+  lorenz63_rho28_T200: subsets of 16: flagged (caution or unreliable) in 0.0% of the draws
+  lorenz63_rho28_T200 [first 16 orbits]: subsets of 8: flagged (caution or unreliable) in 0.0% of the draws
+  lorenz63_rho28_T1000: subsets of 8: flagged (caution or unreliable) in 0.0% of the draws
+  lorenz63_rho28_T1000: subsets of 16: flagged (caution or unreliable) in 0.0% of the draws
+  lorenz63_rho28_T1000 [first 16 orbits]: subsets of 8: flagged (caution or unreliable) in 0.0% of the draws
+  synthetic_gaussian: subsets of 8: flagged (caution or unreliable) in 0.0% of the draws
+MISSES (known-bad cases not UNRELIABLE): none at full size
+  gc_draw581: subsets of 8: UNRELIABLE in 100.0%, OK in 0.0% of the draws
+  gc_draw581: subsets of 16: UNRELIABLE in 100.0%, OK in 0.0% of the draws
+  gc_draw835: subsets of 8: UNRELIABLE in 100.0%, OK in 0.0% of the draws
+  gc_draw835: subsets of 16: UNRELIABLE in 100.0%, OK in 0.0% of the draws
+  synthetic_pareto1.5: subsets of 8: UNRELIABLE in 100.0%, OK in 0.0% of the draws
+  synthetic_pareto1: subsets of 8: UNRELIABLE in 100.0%, OK in 0.0% of the draws
