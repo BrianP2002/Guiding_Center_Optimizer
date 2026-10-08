@@ -92,7 +92,7 @@ print(NILSSResult.load('one_run.npz'))
   (`1/lambda_1` about 170) `T_seg` = 50, 200 and 800 gave the same sensitivity on identical orbits to 1.5e-4 (50 against 200) and 1.4e-2 (800
   against 200) in absolute terms, for sensitivities of order 1. The examples use 0.5 for Lorenz 63 and 200 for the guiding-center flow.
 * **`nus`**: at least the number of positive exponents, which you can measure first with `nilss_jax.lyapunov` (section 7); the paper
-  advises slightly more. `nus = 2` against `nus = 1` on the same orbits is a consistency check (`report(nus_check=...)`): in a
+  (sec. 4.2) raises it until the next exponent is negative. `nus = 2` against `nus = 1` on the same orbits is a consistency check (`report(nus_check=...)`): in a
   uniformly hyperbolic system the answer must not change; where it does (4 of 10 and 4 of 12 orbits in the guiding-center studies) the
   hyperbolicity assumption is in doubt.
 * **`T`**: the orbit must resolve a positive exponent, `lambda_1 * T` of at least 20 (the default `min_lyap_time` of the ensemble

@@ -173,6 +173,14 @@ guiding-center flow.
 - The guiding-center equations: the `gc_vac` mode of [SIMSOPT](https://simsopt.readthedocs.io) and FIRM3D (Littlejohn Lagrangian in
   Boozer coordinates).
 
+## Acknowledgements
+
+NILSS is due to Angxiu Ni and Qiqi Wang. The first version of this repository adapted the public Python implementation that accompanies
+the NILSS paper (https://github.com/niangxiu/nilss, which carries no license file). The code in this release was written afresh:
+`nilss_jax.core` is a new streaming JAX implementation, and `nilss_jax.reference` is a dense implementation rewritten from the equations of
+the paper, structured differently (all steps in memory, the full KKT system solved with a dense solver) and used only to cross-check
+`core`. The earlier adaptation remains in the git history of this repository.
+
 ## Citing
 
 See [CITATION.cff](CITATION.cff). If you use the diagnostics or the guiding-center results, cite the repository and the NILSS paper.

@@ -19,8 +19,9 @@ First public release of `nilss_jax`.
 - `nilss_jax.fd`: finite-difference reference for a long-time average over many orbits (`time_average`, `finite_difference`, `compare`).
 - `nilss_jax.optimize.minimize`: L-BFGS-B on an ensemble average with NILSS or finite-difference gradients.
 - `nilss_jax.lyapunov`: Lyapunov spectrum by the QR method, independent of the NILSS code.
-- `nilss_jax.reference`: the dense one-parameter NumPy NILSS (the earlier `nilss.py`), kept as an independent implementation that the tests
-  compare the streaming code against.
+- `nilss_jax.reference`: a dense one-parameter NumPy NILSS rewritten from the equations of the paper (all steps in memory, the full KKT system solved
+  densely), kept as an independent implementation that the tests compare the streaming code against to 1e-10. It replaces the earlier
+  `nilss.py`, which adapted the unlicensed public code of the NILSS paper; see the acknowledgements in the README.
 - `nilss_jax.systems`: Lorenz 63 (the validation problem) and the vacuum Boozer-coordinate guiding-center flow of SIMSOPT / FIRM3D
   (`guiding_center`: 4D and 3D forms, the energy invariant, two bounded chaotic regimes found by a random scan with their reference results).
 - Command line `nilss-jax` (`selftest`, `lorenz`, `gc`) and `python -m nilss_jax`.
