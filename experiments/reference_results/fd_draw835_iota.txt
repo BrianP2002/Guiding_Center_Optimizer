@@ -1,0 +1,42 @@
+# produced by: python3 experiments/scripts/summarize_gc_official_fd.py results/gc_official_fd_seed835_iota --sea-rel 0.05   (run from the repository root on the stored results; numbers with more than 12 digits are shown in scientific notation)
+540 runs from results/gc_official_fd_seed835_iota: parameter iota, T = 200000, dt = 0.01, 9 values with spacing 0.01, centre 0.32891
+
+sea copies only (part-to-part std of <s> > 0.05 * <s>):
+  iota = 0.28891: n = 40  <s> = 0.03293 +- 0.00042  (copy std 0.0026, within-run SE 0.0015)  median s_max 0.089  s_min 0.0043
+  iota = 0.29891: n = 45  <s> = 0.03645 +- 0.00022  (copy std 0.0015, within-run SE 0.0014)  median s_max 0.092  s_min 0.0041
+  iota = 0.30891: n = 50  <s> = 0.03817 +- 0.00024  (copy std 0.0017, within-run SE 0.0016)  median s_max 0.097  s_min 0.0040
+  iota = 0.31891: n = 55  <s> = 0.04018 +- 0.00027  (copy std 0.0020, within-run SE 0.0017)  median s_max 0.100  s_min 0.0039
+  iota = 0.32891: n = 60  <s> = 0.04121 +- 0.00024  (copy std 0.0019, within-run SE 0.0017)  median s_max 0.103  s_min 0.0037
+  iota = 0.33891: n = 60  <s> = 0.04152 +- 0.00027  (copy std 0.0021, within-run SE 0.0017)  median s_max 0.105  s_min 0.0036
+  iota = 0.34891: n = 60  <s> = 0.04263 +- 0.00024  (copy std 0.0019, within-run SE 0.0016)  median s_max 0.106  s_min 0.0035
+  iota = 0.35891: n = 55  <s> = 0.04343 +- 0.00025  (copy std 0.0019, within-run SE 0.0015)  median s_max 0.107  s_min 0.0032
+  iota = 0.36891: n = 50  <s> = 0.04359 +- 0.00022  (copy std 0.0015, within-run SE 0.0013)  median s_max 0.108  s_min 0.0030
+  slope d<s>/diota at the centre from the points within k*h (straight line):
+    k = 1:  3 points    +0.067 +- 0.019   chi2/dof =    1.4/1
+    k = 2:  5 points    +0.104 +- 0.008   chi2/dof =   12.4/3
+    k = 3:  7 points    +0.114 +- 0.005   chi2/dof =   30.6/5
+    k = 4:  9 points    +0.110 +- 0.003   chi2/dof =  109.1/7
+  slope at the centre from a parabola through the points within k*h:
+    k = 2:  5 points    +0.104 +- 0.008   chi2/dof =    4.9/2
+    k = 3:  7 points    +0.112 +- 0.005   chi2/dof =    7.3/4
+    k = 4:  9 points    +0.119 +- 0.003   chi2/dof =   17.0/6
+
+all bounded copies:
+  iota = 0.28891: n = 60  <s> = 0.04639 +- 0.00254  (copy std 0.0197, within-run SE 0.0011)  median s_max 0.090  s_min 0.0043
+  iota = 0.29891: n = 60  <s> = 0.04580 +- 0.00215  (copy std 0.0166, within-run SE 0.0011)  median s_max 0.094  s_min 0.0042
+  iota = 0.30891: n = 60  <s> = 0.04421 +- 0.00179  (copy std 0.0139, within-run SE 0.0013)  median s_max 0.098  s_min 0.0040
+  iota = 0.31891: n = 60  <s> = 0.04316 +- 0.00131  (copy std 0.0102, within-run SE 0.0016)  median s_max 0.100  s_min 0.0039
+  iota = 0.32891: n = 60  <s> = 0.04121 +- 0.00024  (copy std 0.0019, within-run SE 0.0017)  median s_max 0.103  s_min 0.0037
+  iota = 0.33891: n = 60  <s> = 0.04152 +- 0.00027  (copy std 0.0021, within-run SE 0.0017)  median s_max 0.105  s_min 0.0036
+  iota = 0.34891: n = 60  <s> = 0.04263 +- 0.00024  (copy std 0.0019, within-run SE 0.0016)  median s_max 0.106  s_min 0.0035
+  iota = 0.35891: n = 60  <s> = 0.04192 +- 0.00069  (copy std 0.0053, within-run SE 0.0014)  median s_max 0.107  s_min 0.0032
+  iota = 0.36891: n = 60  <s> = 0.04053 +- 0.00091  (copy std 0.0070, within-run SE 0.0011)  median s_max 0.108  s_min 0.0030
+  slope d<s>/diota at the centre from the points within k*h (straight line):
+    k = 1:  3 points    +0.010 +- 0.034   chi2/dof =    2.5/1
+    k = 2:  5 points    +0.053 +- 0.016   chi2/dof =   11.0/3
+    k = 3:  7 points    +0.034 +- 0.014   chi2/dof =   19.2/5
+    k = 4:  9 points    +0.014 +- 0.012   chi2/dof =   29.3/7
+  slope at the centre from a parabola through the points within k*h:
+    k = 2:  5 points    -0.042 +- 0.033   chi2/dof =    0.7/2
+    k = 3:  7 points    -0.017 +- 0.022   chi2/dof =   10.6/4
+    k = 4:  9 points    -0.008 +- 0.017   chi2/dof =   25.9/6

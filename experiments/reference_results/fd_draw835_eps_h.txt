@@ -1,0 +1,42 @@
+# produced by: python3 experiments/scripts/summarize_gc_official_fd.py results/gc_official_fd_seed835_eps_h --sea-rel 0.05   (run from the repository root on the stored results; numbers with more than 12 digits are shown in scientific notation)
+540 runs from results/gc_official_fd_seed835_eps_h: parameter eps_h, T = 200000, dt = 0.01, 9 values with spacing 0.0035, centre 0.10812
+
+sea copies only (part-to-part std of <s> > 0.05 * <s>):
+  eps_h = 0.09412: n = 50  <s> = 0.05621 +- 0.00051  (copy std 0.0036, within-run SE 0.0028)  median s_max 0.136  s_min 0.0079
+  eps_h = 0.09762: n = 60  <s> = 0.05104 +- 0.00040  (copy std 0.0031, within-run SE 0.0026)  median s_max 0.126  s_min 0.0066
+  eps_h = 0.10112: n = 60  <s> = 0.04773 +- 0.00038  (copy std 0.0030, within-run SE 0.0023)  median s_max 0.117  s_min 0.0055
+  eps_h = 0.10462: n = 60  <s> = 0.04450 +- 0.00027  (copy std 0.0021, within-run SE 0.0020)  median s_max 0.109  s_min 0.0045
+  eps_h = 0.10812: n = 60  <s> = 0.04121 +- 0.00024  (copy std 0.0019, within-run SE 0.0017)  median s_max 0.103  s_min 0.0037
+  eps_h = 0.11162: n = 55  <s> = 0.03841 +- 0.00022  (copy std 0.0016, within-run SE 0.0015)  median s_max 0.096  s_min 0.0030
+  eps_h = 0.11512: n = 55  <s> = 0.03563 +- 0.00028  (copy std 0.0020, within-run SE 0.0013)  median s_max 0.091  s_min 0.0023
+  eps_h = 0.11862: n = 50  <s> = 0.03320 +- 0.00020  (copy std 0.0014, within-run SE 0.0012)  median s_max 0.086  s_min 0.0018
+  eps_h = 0.12212: n = 40  <s> = 0.03164 +- 0.00018  (copy std 0.0011, within-run SE 0.0011)  median s_max 0.082  s_min 0.0013
+  slope d<s>/deps_h at the centre from the points within k*h (straight line):
+    k = 1:  3 points    -0.864 +- 0.049   chi2/dof =    0.7/1
+    k = 2:  5 points    -0.858 +- 0.027   chi2/dof =    2.0/3
+    k = 3:  7 points    -0.834 +- 0.016   chi2/dof =   11.0/5
+    k = 4:  9 points    -0.802 +- 0.011   chi2/dof =   94.4/7
+  slope at the centre from a parabola through the points within k*h:
+    k = 2:  5 points    -0.865 +- 0.028   chi2/dof =    0.2/2
+    k = 3:  7 points    -0.855 +- 0.017   chi2/dof =    0.5/4
+    k = 4:  9 points    -0.865 +- 0.013   chi2/dof =    6.0/6
+
+all bounded copies:
+  eps_h = 0.09412: n = 60  <s> = 0.05298 +- 0.00112  (copy std 0.0087, within-run SE 0.0024)  median s_max 0.135  s_min 0.0079
+  eps_h = 0.09762: n = 60  <s> = 0.05104 +- 0.00040  (copy std 0.0031, within-run SE 0.0026)  median s_max 0.126  s_min 0.0066
+  eps_h = 0.10112: n = 60  <s> = 0.04773 +- 0.00038  (copy std 0.0030, within-run SE 0.0023)  median s_max 0.117  s_min 0.0055
+  eps_h = 0.10462: n = 60  <s> = 0.04450 +- 0.00027  (copy std 0.0021, within-run SE 0.0020)  median s_max 0.109  s_min 0.0045
+  eps_h = 0.10812: n = 60  <s> = 0.04121 +- 0.00024  (copy std 0.0019, within-run SE 0.0017)  median s_max 0.103  s_min 0.0037
+  eps_h = 0.11162: n = 60  <s> = 0.04117 +- 0.00121  (copy std 0.0094, within-run SE 0.0014)  median s_max 0.096  s_min 0.0030
+  eps_h = 0.11512: n = 60  <s> = 0.03870 +- 0.00135  (copy std 0.0104, within-run SE 0.0012)  median s_max 0.091  s_min 0.0023
+  eps_h = 0.11862: n = 60  <s> = 0.03886 +- 0.00168  (copy std 0.0130, within-run SE 0.0010)  median s_max 0.087  s_min 0.0018
+  eps_h = 0.12212: n = 60  <s> = 0.04189 +- 0.00195  (copy std 0.0151, within-run SE 0.0007)  median s_max 0.082  s_min 0.0013
+  slope d<s>/deps_h at the centre from the points within k*h (straight line):
+    k = 1:  3 points    -0.839 +- 0.095   chi2/dof =    6.0/1
+    k = 2:  5 points    -0.833 +- 0.055   chi2/dof =   12.1/3
+    k = 3:  7 points    -0.837 +- 0.036   chi2/dof =   27.5/5
+    k = 4:  9 points    -0.775 +- 0.033   chi2/dof =   61.3/7
+  slope at the centre from a parabola through the points within k*h:
+    k = 2:  5 points    -0.666 +- 0.080   chi2/dof =    3.9/2
+    k = 3:  7 points    -0.647 +- 0.055   chi2/dof =    7.1/4
+    k = 4:  9 points    -0.593 +- 0.042   chi2/dof =   16.3/6

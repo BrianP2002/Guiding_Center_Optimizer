@@ -1,0 +1,167 @@
+# produced by: python3 experiments/scripts/summarize_gc_official_candidates.py results/gc_official_candidates   (run from the repository root on the stored results; numbers with more than 12 digits are shown in scientific notation)
+144 runs from results/gc_official_candidates
+
+seed 34: kappa=0.445 N=2 eps_h=0.132 eps_t=0.000 eps_m=0.083 eps_2=0.011(N2=3) iota=0.58 lam=0.940   T=200000
+  k= 0 escaped  lam1= 0.00484 lam1*T=  969.0 <s>=0.8984  (1st half 0.3227, 2nd half 1.4742, part-to-part std 0.6345) s in [0.000,3.354] v_par sign change=True
+  k= 1 escaped  lam1= 0.00513 lam1*T= 1025.3 <s>=0.8278  (1st half 1.2085, 2nd half 0.4470, part-to-part std 0.6774) s in [0.000,3.437] v_par sign change=True
+  k= 2 escaped  lam1= 0.00427 lam1*T=  854.4 <s>=0.9693  (1st half 0.5485, 2nd half 1.3901, part-to-part std 0.5883) s in [0.000,3.428] v_par sign change=True
+  k= 3 escaped  lam1= 0.00533 lam1*T= 1066.7 <s>=0.7551  (1st half 1.1503, 2nd half 0.3598, part-to-part std 0.6587) s in [0.000,3.291] v_par sign change=True
+  k= 4 escaped  lam1= 0.00542 lam1*T= 1084.0 <s>=0.7420  (1st half 0.1832, 2nd half 1.3007, part-to-part std 0.6558) s in [0.000,3.423] v_par sign change=True
+  k= 5 escaped  lam1= 0.00546 lam1*T= 1091.6 <s>=0.3828  (1st half 0.2297, 2nd half 0.5359, part-to-part std 0.3429) s in [0.000,3.420] v_par sign change=True
+  k= 6 escaped  lam1= 0.00406 lam1*T=  811.6 <s>=1.2096  (1st half 1.1156, 2nd half 1.3037, part-to-part std 0.5471) s in [0.000,3.431] v_par sign change=True
+  k= 7 escaped  lam1= 0.00593 lam1*T= 1186.3 <s>=0.5875  (1st half 0.2592, 2nd half 0.9158, part-to-part std 0.6035) s in [0.000,3.359] v_par sign change=True
+  k= 8 chaotic  lam1= 0.00663 lam1*T= 1325.9 <s>=0.1936  (1st half 0.2006, 2nd half 0.1866, part-to-part std 0.0697) s in [0.000,0.852] v_par sign change=True
+  k= 9 escaped  lam1= 0.00668 lam1*T= 1335.2 <s>=0.3874  (1st half 0.3488, 2nd half 0.4261, part-to-part std 0.4839) s in [0.000,3.107] v_par sign change=True
+  k=10 escaped  lam1= 0.00436 lam1*T=  871.2 <s>=1.2041  (1st half 1.2260, 2nd half 1.1823, part-to-part std 0.4751) s in [0.000,3.286] v_par sign change=True
+  k=11 escaped  lam1= 0.00417 lam1*T=  834.7 <s>=1.2989  (1st half 1.4145, 2nd half 1.1833, part-to-part std 0.4415) s in [0.000,3.447] v_par sign change=True
+  k=12 escaped  lam1= 0.00385 lam1*T=  770.6 <s>=1.3404  (1st half 1.3951, 2nd half 1.2857, part-to-part std 0.4000) s in [0.000,3.441] v_par sign change=True
+  k=13 escaped  lam1= 0.00464 lam1*T=  928.2 <s>=1.0671  (1st half 1.0553, 2nd half 1.0788, part-to-part std 0.5746) s in [0.000,3.433] v_par sign change=True
+  k=14 escaped  lam1= 0.00337 lam1*T=  674.8 <s>=1.5023  (1st half 1.5068, 2nd half 1.4977, part-to-part std 0.2885) s in [0.153,3.352] v_par sign change=True
+  k=15 escaped  lam1= 0.00444 lam1*T=  888.7 <s>=1.0303  (1st half 0.5189, 2nd half 1.5417, part-to-part std 0.6726) s in [0.000,3.438] v_par sign change=True
+
+seed 95: kappa=0.593 N=2 eps_h=0.097 eps_t=0.053 eps_m=0.000 eps_2=0.035(N2=4) iota=1.12 lam=0.980   T=200000
+  k= 0 escaped  lam1= 0.00259 lam1*T=  518.5 <s>=1.4179  (1st half 0.8827, 2nd half 1.9530, part-to-part std 0.7360) s in [0.000,5.843] v_par sign change=True
+  k= 1 escaped  lam1= 0.00395 lam1*T=  789.7 <s>=0.7231  (1st half 0.4111, 2nd half 1.0350, part-to-part std 0.4503) s in [0.000,2.911] v_par sign change=True
+  k= 2 escaped  lam1= 0.00749 lam1*T= 1497.9 <s>=0.2652  (1st half 0.3055, 2nd half 0.2249, part-to-part std 0.1704) s in [0.000,1.919] v_par sign change=True
+  k= 3 escaped  lam1= 0.00746 lam1*T= 1492.7 <s>=0.3606  (1st half 0.1558, 2nd half 0.5654, part-to-part std 0.4211) s in [0.000,3.542] v_par sign change=True
+  k= 4 escaped  lam1= 0.00423 lam1*T=  846.7 <s>=0.6201  (1st half 0.3765, 2nd half 0.8637, part-to-part std 0.4803) s in [0.000,3.694] v_par sign change=True
+  k= 5 escaped  lam1= 0.00184 lam1*T=  367.0 <s>=1.7057  (1st half 1.4153, 2nd half 1.9961, part-to-part std 0.5953) s in [0.190,4.710] v_par sign change=True
+  k= 6 escaped  lam1= 0.00339 lam1*T=  678.4 <s>=1.0094  (1st half 0.6093, 2nd half 1.4096, part-to-part std 0.5284) s in [0.000,3.766] v_par sign change=True
+  k= 7 escaped  lam1= 0.00913 lam1*T= 1825.4 <s>=0.1768  (1st half 0.2002, 2nd half 0.1534, part-to-part std 0.0776) s in [0.000,1.269] v_par sign change=True
+  k= 8 escaped  lam1= 0.00596 lam1*T= 1192.2 <s>=0.3321  (1st half 0.2485, 2nd half 0.4158, part-to-part std 0.1911) s in [0.000,1.938] v_par sign change=True
+  k= 9 escaped  lam1= 0.00808 lam1*T= 1615.3 <s>=0.2769  (1st half 0.1672, 2nd half 0.3866, part-to-part std 0.2558) s in [0.000,2.156] v_par sign change=True
+  k=10 escaped  lam1= 0.00585 lam1*T= 1170.8 <s>=0.8009  (1st half 0.2206, 2nd half 1.3812, part-to-part std 0.6313) s in [0.000,3.697] v_par sign change=True
+  k=11 escaped  lam1= 0.00259 lam1*T=  517.7 <s>=1.0422  (1st half 0.7598, 2nd half 1.3246, part-to-part std 0.4706) s in [0.000,3.716] v_par sign change=True
+  k=12 escaped  lam1= 0.00364 lam1*T=  728.8 <s>=0.5981  (1st half 0.6666, 2nd half 0.5296, part-to-part std 0.2953) s in [0.000,2.187] v_par sign change=True
+  k=13 escaped  lam1= 0.00398 lam1*T=  796.0 <s>=1.3583  (1st half 0.2688, 2nd half 2.4477, part-to-part std 1.2667) s in [0.000,6.551] v_par sign change=True
+  k=14 escaped  lam1= 0.00334 lam1*T=  668.8 <s>=1.2403  (1st half 0.5529, 2nd half 1.9277, part-to-part std 0.8191) s in [0.000,5.439] v_par sign change=True
+  k=15 escaped  lam1= 0.00209 lam1*T=  417.7 <s>=1.9986  (1st half 1.6229, 2nd half 2.3743, part-to-part std 0.7524) s in [0.038,6.346] v_par sign change=True
+
+seed 581: kappa=0.157 N=2 eps_h=0.125 eps_t=0.034 eps_m=0.018 eps_2=0.007(N2=4) iota=0.78 lam=1.026   T=200000
+  k= 0 chaotic  lam1= 0.00617 lam1*T= 1233.9 <s>=0.0956  (1st half 0.0961, 2nd half 0.0951, part-to-part std 0.0210) s in [0.008,0.252] v_par sign change=True
+  k= 1 chaotic  lam1= 0.00551 lam1*T= 1102.9 <s>=0.1048  (1st half 0.1101, 2nd half 0.0995, part-to-part std 0.0263) s in [0.008,0.253] v_par sign change=True
+  k= 2 regular  lam1= 0.00004 lam1*T=    8.9 <s>=0.2433  (1st half 0.2433, 2nd half 0.2433, part-to-part std 0.0005) s in [0.120,0.348] v_par sign change=True
+  k= 3 chaotic  lam1= 0.00515 lam1*T= 1031.0 <s>=0.1131  (1st half 0.1089, 2nd half 0.1174, part-to-part std 0.0340) s in [0.008,0.260] v_par sign change=True
+  k= 4 regular  lam1= 0.00005 lam1*T=    9.9 <s>=0.3451  (1st half 0.3451, 2nd half 0.3451, part-to-part std 0.0020) s in [0.160,0.513] v_par sign change=True
+  k= 5 regular  lam1= 0.00005 lam1*T=    9.7 <s>=0.3663  (1st half 0.3664, 2nd half 0.3662, part-to-part std 0.0001) s in [0.168,0.547] v_par sign change=True
+  k= 6 chaotic  lam1= 0.00422 lam1*T=  843.6 <s>=0.1251  (1st half 0.1021, 2nd half 0.1481, part-to-part std 0.0404) s in [0.008,0.265] v_par sign change=True
+  k= 7 regular  lam1= 0.00005 lam1*T=    9.8 <s>=0.4642  (1st half 0.4646, 2nd half 0.4638, part-to-part std 0.0018) s in [0.204,0.705] v_par sign change=True
+  k= 8 regular  lam1= 0.00005 lam1*T=   10.4 <s>=0.4416  (1st half 0.4415, 2nd half 0.4417, part-to-part std 0.0033) s in [0.196,0.669] v_par sign change=True
+  k= 9 escaped  lam1= 0.00005 lam1*T=   10.8 <s>=0.6994  (1st half 0.6994, 2nd half 0.6994, part-to-part std 0.0075) s in [0.292,1.086] v_par sign change=True
+  k=10 regular  lam1= 0.00005 lam1*T=   10.0 <s>=0.2096  (1st half 0.2096, 2nd half 0.2096, part-to-part std 0.0007) s in [0.107,0.296] v_par sign change=True
+  k=11 regular  lam1= 0.00005 lam1*T=    9.9 <s>=0.5015  (1st half 0.5012, 2nd half 0.5019, part-to-part std 0.0040) s in [0.218,0.766] v_par sign change=True
+  k=12 regular  lam1= 0.00005 lam1*T=    9.9 <s>=0.2062  (1st half 0.2062, 2nd half 0.2062, part-to-part std 0.0006) s in [0.106,0.290] v_par sign change=True
+  k=13 chaotic  lam1= 0.00520 lam1*T= 1039.5 <s>=0.1120  (1st half 0.1343, 2nd half 0.0897, part-to-part std 0.0406) s in [0.008,0.279] v_par sign change=True
+  k=14 regular  lam1= 0.00004 lam1*T=    8.7 <s>=0.4424  (1st half 0.4423, 2nd half 0.4424, part-to-part std 0.0036) s in [0.196,0.670] v_par sign change=True
+  k=15 escaped  lam1= 0.00005 lam1*T=    9.2 <s>=0.6594  (1st half 0.6590, 2nd half 0.6599, part-to-part std 0.0016) s in [0.277,1.021] v_par sign change=True
+  chaotic initial conditions: 5; <s> across them: mean 0.1101, std 0.0109; typical within-run standard error 0.0073  ->  spread / standard error = 1.5 (about 1 for an ergodic set)
+
+seed 663: kappa=0.253 N=3 eps_h=0.077 eps_t=0.028 eps_m=0.037 eps_2=0.000(N2=1) iota=0.65 lam=1.014   T=200000
+  k= 0 escaped  lam1= 0.00457 lam1*T=  914.5 <s>=0.5180  (1st half 0.4844, 2nd half 0.5515, part-to-part std 0.2079) s in [0.000,1.589] v_par sign change=True
+  k= 1 escaped  lam1= 0.00477 lam1*T=  954.7 <s>=0.4415  (1st half 0.4487, 2nd half 0.4344, part-to-part std 0.2048) s in [0.000,1.538] v_par sign change=True
+  k= 2 escaped  lam1= 0.00309 lam1*T=  617.2 <s>=0.7645  (1st half 0.5010, 2nd half 1.0280, part-to-part std 0.3481) s in [0.000,1.925] v_par sign change=True
+  k= 3 escaped  lam1= 0.00206 lam1*T=  412.7 <s>=0.9653  (1st half 0.7103, 2nd half 1.2203, part-to-part std 0.3570) s in [0.000,1.980] v_par sign change=True
+  k= 4 escaped  lam1= 0.00531 lam1*T= 1062.8 <s>=0.3160  (1st half 0.4058, 2nd half 0.2262, part-to-part std 0.2306) s in [0.000,1.629] v_par sign change=True
+  k= 5 escaped  lam1= 0.00496 lam1*T=  991.9 <s>=0.4121  (1st half 0.4415, 2nd half 0.3827, part-to-part std 0.2348) s in [0.000,1.490] v_par sign change=True
+  k= 6 escaped  lam1= 0.00433 lam1*T=  865.2 <s>=0.5334  (1st half 0.5196, 2nd half 0.5472, part-to-part std 0.2881) s in [0.000,1.640] v_par sign change=True
+  k= 7 escaped  lam1= 0.00415 lam1*T=  829.1 <s>=0.6133  (1st half 0.5995, 2nd half 0.6271, part-to-part std 0.2395) s in [0.000,1.586] v_par sign change=True
+  k= 8 escaped  lam1= 0.00522 lam1*T= 1044.4 <s>=0.3249  (1st half 0.3284, 2nd half 0.3215, part-to-part std 0.2000) s in [0.000,1.459] v_par sign change=True
+  k= 9 escaped  lam1= 0.00508 lam1*T= 1015.3 <s>=0.3416  (1st half 0.4090, 2nd half 0.2742, part-to-part std 0.2115) s in [0.000,1.528] v_par sign change=True
+  k=10 escaped  lam1= 0.00530 lam1*T= 1059.4 <s>=0.3715  (1st half 0.2820, 2nd half 0.4609, part-to-part std 0.1947) s in [0.000,1.454] v_par sign change=True
+  k=11 escaped  lam1= 0.00493 lam1*T=  986.0 <s>=0.4194  (1st half 0.5629, 2nd half 0.2759, part-to-part std 0.2386) s in [0.000,1.550] v_par sign change=True
+  k=12 escaped  lam1= 0.00492 lam1*T=  984.8 <s>=0.4233  (1st half 0.3686, 2nd half 0.4780, part-to-part std 0.2123) s in [0.000,1.556] v_par sign change=True
+  k=13 escaped  lam1= 0.00455 lam1*T=  911.0 <s>=0.4831  (1st half 0.4468, 2nd half 0.5193, part-to-part std 0.2405) s in [0.000,1.612] v_par sign change=True
+  k=14 escaped  lam1= 0.00362 lam1*T=  725.0 <s>=0.6640  (1st half 0.8478, 2nd half 0.4802, part-to-part std 0.3888) s in [0.000,1.847] v_par sign change=True
+  k=15 escaped  lam1= 0.00422 lam1*T=  844.9 <s>=0.5890  (1st half 0.5955, 2nd half 0.5825, part-to-part std 0.2743) s in [0.000,1.630] v_par sign change=True
+
+seed 792: kappa=0.351 N=3 eps_h=0.042 eps_t=0.006 eps_m=0.007 eps_2=0.016(N2=1) iota=1.62 lam=1.001   T=200000
+  k= 0 escaped  lam1= 0.00204 lam1*T=  408.0 <s>=0.5801  (1st half 0.3098, 2nd half 0.8503, part-to-part std 0.3222) s in [0.000,2.291] v_par sign change=True
+  k= 1 escaped  lam1= 0.00005 lam1*T=   10.7 <s>=2.2004  (1st half 2.1997, 2nd half 2.2011, part-to-part std 0.1188) s in [0.094,4.333] v_par sign change=True
+  k= 2 escaped  lam1= 0.00282 lam1*T=  563.4 <s>=0.3867  (1st half 0.4350, 2nd half 0.3385, part-to-part std 0.2012) s in [0.000,1.836] v_par sign change=True
+  k= 3 escaped  lam1= 0.00299 lam1*T=  598.0 <s>=0.2696  (1st half 0.2299, 2nd half 0.3094, part-to-part std 0.1845) s in [0.000,1.858] v_par sign change=True
+  k= 4 escaped  lam1= 0.00156 lam1*T=  311.7 <s>=0.7577  (1st half 0.7563, 2nd half 0.7591, part-to-part std 0.2174) s in [0.000,2.124] v_par sign change=True
+  k= 5 escaped  lam1= 0.00182 lam1*T=  364.5 <s>=0.6491  (1st half 0.6443, 2nd half 0.6539, part-to-part std 0.1766) s in [0.000,1.980] v_par sign change=True
+  k= 6 escaped  lam1= 0.00013 lam1*T=   25.8 <s>=1.6888  (1st half 1.6913, 2nd half 1.6862, part-to-part std 0.0290) s in [0.066,3.374] v_par sign change=True
+  k= 7 escaped  lam1= 0.00227 lam1*T=  453.8 <s>=0.4996  (1st half 0.3965, 2nd half 0.6027, part-to-part std 0.3323) s in [0.000,2.301] v_par sign change=True
+  k= 8 escaped  lam1= 0.00005 lam1*T=   10.0 <s>=2.1254  (1st half 2.1393, 2nd half 2.1115, part-to-part std 0.1021) s in [0.090,4.193] v_par sign change=True
+  k= 9 escaped  lam1= 0.00212 lam1*T=  423.1 <s>=0.5579  (1st half 0.6635, 2nd half 0.4522, part-to-part std 0.2493) s in [0.000,2.139] v_par sign change=True
+  k=10 escaped  lam1= 0.00093 lam1*T=  185.3 <s>=1.0733  (1st half 0.9450, 2nd half 1.2016, part-to-part std 0.2637) s in [0.000,2.571] v_par sign change=True
+  k=11 escaped  lam1= 0.00005 lam1*T=   10.5 <s>=3.2093  (1st half 3.1982, 2nd half 3.2203, part-to-part std 0.0582) s in [0.155,6.250] v_par sign change=True
+  k=12 escaped  lam1= 0.00005 lam1*T=    9.5 <s>=4.8808  (1st half 4.8998, 2nd half 4.8619, part-to-part std 0.4666) s in [0.264,9.412] v_par sign change=True
+  k=13 escaped  lam1= 0.00005 lam1*T=    9.1 <s>=2.1340  (1st half 2.1328, 2nd half 2.1353, part-to-part std 0.1101) s in [0.091,4.208] v_par sign change=True
+  k=14 escaped  lam1= 0.00201 lam1*T=  401.5 <s>=0.6428  (1st half 0.8930, 2nd half 0.3927, part-to-part std 0.3787) s in [0.000,2.354] v_par sign change=True
+  k=15 escaped  lam1= 0.00005 lam1*T=   10.6 <s>=3.5960  (1st half 3.6186, 2nd half 3.5734, part-to-part std 0.1580) s in [0.180,6.996] v_par sign change=True
+
+seed 835: kappa=0.071 N=1 eps_h=0.108 eps_t=0.000 eps_m=0.000 eps_2=0.012(N2=3) iota=0.33 lam=0.985   T=200000
+  k= 0 chaotic  lam1= 0.00262 lam1*T=  524.8 <s>=0.0434  (1st half 0.0409, 2nd half 0.0458, part-to-part std 0.0048) s in [0.004,0.103] v_par sign change=True
+  k= 1 regular  lam1= 0.00005 lam1*T=   10.2 <s>=0.4136  (1st half 0.4137, 2nd half 0.4134, part-to-part std 0.0030) s in [0.320,0.523] v_par sign change=True
+  k= 2 regular  lam1= 0.00006 lam1*T=   11.1 <s>=0.3020  (1st half 0.3022, 2nd half 0.3018, part-to-part std 0.0009) s in [0.225,0.396] v_par sign change=True
+  k= 3 regular  lam1= 0.00005 lam1*T=   10.4 <s>=0.2528  (1st half 0.2527, 2nd half 0.2529, part-to-part std 0.0003) s in [0.184,0.339] v_par sign change=True
+  k= 4 chaotic  lam1= 0.00330 lam1*T=  659.2 <s>=0.0395  (1st half 0.0401, 2nd half 0.0390, part-to-part std 0.0089) s in [0.004,0.103] v_par sign change=True
+  k= 5 regular  lam1= 0.00005 lam1*T=   10.2 <s>=0.2046  (1st half 0.2046, 2nd half 0.2046, part-to-part std 0.0009) s in [0.144,0.282] v_par sign change=True
+  k= 6 regular  lam1= 0.00005 lam1*T=   10.9 <s>=0.1904  (1st half 0.1906, 2nd half 0.1903, part-to-part std 0.0010) s in [0.133,0.266] v_par sign change=True
+  k= 7 regular  lam1= 0.00004 lam1*T=    8.7 <s>=0.2406  (1st half 0.2406, 2nd half 0.2406, part-to-part std 0.0005) s in [0.174,0.325] v_par sign change=True
+  k= 8 regular  lam1= 0.00005 lam1*T=   10.5 <s>=0.4556  (1st half 0.4558, 2nd half 0.4554, part-to-part std 0.0029) s in [0.356,0.570] v_par sign change=True
+  k= 9 regular  lam1= 0.00006 lam1*T=   11.2 <s>=0.1615  (1st half 0.1615, 2nd half 0.1616, part-to-part std 0.0009) s in [0.109,0.231] v_par sign change=True
+  k=10 chaotic  lam1= 0.00310 lam1*T=  619.5 <s>=0.0384  (1st half 0.0395, 2nd half 0.0373, part-to-part std 0.0075) s in [0.004,0.101] v_par sign change=True
+  k=11 regular  lam1= 0.00006 lam1*T=   11.3 <s>=0.2124  (1st half 0.2125, 2nd half 0.2124, part-to-part std 0.0009) s in [0.151,0.292] v_par sign change=True
+  k=12 regular  lam1= 0.00006 lam1*T=   11.4 <s>=0.2241  (1st half 0.2241, 2nd half 0.2241, part-to-part std 0.0007) s in [0.160,0.305] v_par sign change=True
+  k=13 regular  lam1= 0.00005 lam1*T=   10.5 <s>=0.1590  (1st half 0.1591, 2nd half 0.1589, part-to-part std 0.0009) s in [0.107,0.228] v_par sign change=True
+  k=14 regular  lam1= 0.00006 lam1*T=   12.2 <s>=0.1180  (1st half 0.1180, 2nd half 0.1181, part-to-part std 0.0001) s in [0.075,0.176] v_par sign change=True
+  k=15 regular  lam1= 0.00006 lam1*T=   11.0 <s>=0.1940  (1st half 0.1940, 2nd half 0.1941, part-to-part std 0.0009) s in [0.136,0.270] v_par sign change=True
+  chaotic initial conditions: 3; <s> across them: mean 0.0404, std 0.0026; typical within-run standard error 0.0016  ->  spread / standard error = 1.7 (about 1 for an ergodic set)
+
+seed 873: kappa=0.241 N=2 eps_h=0.130 eps_t=0.007 eps_m=0.009 eps_2=0.076(N2=1) iota=1.38 lam=0.902   T=200000
+  k= 0 escaped  lam1= 0.00082 lam1*T=  163.7 <s>=22.0922  (1st half 17.9785, 2nd half 26.2060, part-to-part std 8.2358) s in [0.136,80.529] v_par sign change=True
+  k= 1 regular  lam1= 0.00005 lam1*T=    9.7 <s>=0.2338  (1st half 0.2338, 2nd half 0.2338, part-to-part std 0.0001) s in [0.158,0.332] v_par sign change=False
+  k= 2 regular  lam1= 0.00005 lam1*T=    9.7 <s>=0.2012  (1st half 0.2012, 2nd half 0.2012, part-to-part std 0.0001) s in [0.119,0.273] v_par sign change=False
+  k= 3 escaped  lam1= 0.00225 lam1*T=  449.8 <s>=12.5301  (1st half 2.9980, 2nd half 22.0622, part-to-part std 10.6666) s in [0.124,81.083] v_par sign change=True
+  k= 4 escaped  lam1= 0.00107 lam1*T=  213.4 <s>=16.8289  (1st half 13.9515, 2nd half 19.7064, part-to-part std 8.7504) s in [0.124,81.738] v_par sign change=True
+  k= 5 escaped  lam1= 0.00063 lam1*T=  126.6 <s>=24.9225  (1st half 23.9493, 2nd half 25.8956, part-to-part std 4.9238) s in [0.206,81.371] v_par sign change=True
+  k= 6 regular  lam1= 0.00005 lam1*T=   10.7 <s>=0.1313  (1st half 0.1314, 2nd half 0.1311, part-to-part std 0.0030) s in [0.076,0.206] v_par sign change=False
+  k= 7 regular  lam1= 0.00005 lam1*T=   10.5 <s>=0.1809  (1st half 0.1809, 2nd half 0.1809, part-to-part std 0.0001) s in [0.120,0.261] v_par sign change=False
+  k= 8 escaped  lam1= 0.00190 lam1*T=  380.1 <s>=11.6482  (1st half 10.6668, 2nd half 12.6297, part-to-part std 7.0821) s in [0.128,81.908] v_par sign change=True
+  k= 9 regular  lam1= 0.00006 lam1*T=   11.9 <s>=0.0538  (1st half 0.0538, 2nd half 0.0538, part-to-part std 0.0000) s in [0.018,0.092] v_par sign change=False
+  k=10 regular  lam1= 0.00005 lam1*T=   10.7 <s>=0.0945  (1st half 0.0945, 2nd half 0.0945, part-to-part std 0.0000) s in [0.050,0.153] v_par sign change=False
+  k=11 regular  lam1= 0.00005 lam1*T=   10.8 <s>=0.1189  (1st half 0.1188, 2nd half 0.1189, part-to-part std 0.0000) s in [0.061,0.171] v_par sign change=False
+  k=12 escaped  lam1= 0.00351 lam1*T=  702.7 <s>=1.8823  (1st half 1.9357, 2nd half 1.8288, part-to-part std 1.5276) s in [0.129,15.664] v_par sign change=True
+  k=13 regular  lam1= 0.00004 lam1*T=    8.9 <s>=0.1250  (1st half 0.1250, 2nd half 0.1250, part-to-part std 0.0000) s in [0.065,0.178] v_par sign change=False
+  k=14 escaped  lam1= 0.00247 lam1*T=  494.0 <s>=11.1844  (1st half 6.3068, 2nd half 16.0619, part-to-part std 11.0603) s in [0.122,81.850] v_par sign change=True
+  k=15 escaped  lam1= 0.00202 lam1*T=  404.6 <s>=14.2884  (1st half 8.9677, 2nd half 19.6092, part-to-part std 10.5468) s in [0.130,82.032] v_par sign change=True
+
+seed 951: kappa=0.121 N=3 eps_h=0.162 eps_t=0.047 eps_m=0.000 eps_2=0.000(N2=4) iota=1.11 lam=0.952   T=200000
+  k= 0 escaped  lam1= 0.00283 lam1*T=  565.5 <s>=0.6570  (1st half 0.6676, 2nd half 0.6464, part-to-part std 0.3189) s in [0.046,3.034] v_par sign change=True
+  k= 1 chaotic  lam1= 0.00613 lam1*T= 1226.1 <s>=0.0754  (1st half 0.0806, 2nd half 0.0702, part-to-part std 0.0104) s in [0.041,0.151] v_par sign change=True
+  k= 2 escaped  lam1= 0.00180 lam1*T=  360.5 <s>=0.9245  (1st half 0.9233, 2nd half 0.9257, part-to-part std 0.1934) s in [0.078,3.036] v_par sign change=True
+  k= 3 escaped  lam1= 0.00156 lam1*T=  311.2 <s>=1.0223  (1st half 1.0222, 2nd half 1.0224, part-to-part std 0.0265) s in [0.127,2.782] v_par sign change=True
+  k= 4 regular  lam1= 0.00005 lam1*T=   10.2 <s>=0.3086  (1st half 0.3088, 2nd half 0.3083, part-to-part std 0.0020) s in [0.179,0.439] v_par sign change=True
+  k= 5 escaped  lam1= 0.00006 lam1*T=   11.4 <s>=1.3267  (1st half 1.3257, 2nd half 1.3278, part-to-part std 0.0095) s in [0.153,3.123] v_par sign change=True
+  k= 6 escaped  lam1= 0.00006 lam1*T=   11.1 <s>=1.5653  (1st half 1.5745, 2nd half 1.5561, part-to-part std 0.0736) s in [0.212,3.383] v_par sign change=True
+  k= 7 escaped  lam1= 0.00293 lam1*T=  586.7 <s>=0.5732  (1st half 0.5981, 2nd half 0.5483, part-to-part std 0.3490) s in [0.054,3.036] v_par sign change=True
+  k= 8 escaped  lam1= 0.00154 lam1*T=  307.3 <s>=1.0205  (1st half 1.0202, 2nd half 1.0209, part-to-part std 0.0340) s in [0.101,3.004] v_par sign change=True
+  k= 9 regular  lam1= 0.00004 lam1*T=    8.4 <s>=0.3444  (1st half 0.3451, 2nd half 0.3438, part-to-part std 0.0008) s in [0.142,0.544] v_par sign change=True
+  k=10 escaped  lam1= 0.00005 lam1*T=   10.8 <s>=1.5285  (1st half 1.5235, 2nd half 1.5336, part-to-part std 0.0728) s in [0.200,3.327] v_par sign change=True
+  k=11 escaped  lam1= 0.00167 lam1*T=  333.5 <s>=0.9614  (1st half 1.0223, 2nd half 0.9006, part-to-part std 0.1207) s in [0.075,3.025] v_par sign change=True
+  k=12 escaped  lam1= 0.00156 lam1*T=  312.2 <s>=1.0236  (1st half 1.0238, 2nd half 1.0234, part-to-part std 0.0236) s in [0.119,2.874] v_par sign change=True
+  k=13 escaped  lam1= 0.00006 lam1*T=   11.1 <s>=1.7109  (1st half 1.7014, 2nd half 1.7205, part-to-part std 0.0877) s in [0.250,3.584] v_par sign change=True
+  k=14 regular  lam1= 0.00005 lam1*T=   10.1 <s>=0.2993  (1st half 0.2993, 2nd half 0.2993, part-to-part std 0.0017) s in [0.196,0.404] v_par sign change=True
+  k=15 regular  lam1= 0.00006 lam1*T=   12.5 <s>=0.0207  (1st half 0.0207, 2nd half 0.0207, part-to-part std 0.0000) s in [0.015,0.025] v_par sign change=False
+
+seed 959: kappa=0.065 N=5 eps_h=0.089 eps_t=0.034 eps_m=0.006 eps_2=0.000(N2=7) iota=1.20 lam=0.994   T=200000
+  k= 0 chaotic  lam1= 0.00415 lam1*T=  829.9 <s>=0.0305  (1st half 0.0327, 2nd half 0.0282, part-to-part std 0.0168) s in [0.000,0.187] v_par sign change=True
+  k= 1 escaped  lam1= 0.00007 lam1*T=   13.1 <s>=1.1200  (1st half 1.1412, 2nd half 1.0989, part-to-part std 0.1615) s in [0.035,2.276] v_par sign change=True
+  k= 2 escaped  lam1= 0.00005 lam1*T=   10.5 <s>=1.9310  (1st half 1.9330, 2nd half 1.9291, part-to-part std 0.2442) s in [0.104,3.646] v_par sign change=True
+  k= 3 chaotic  lam1= 0.00262 lam1*T=  523.6 <s>=0.0820  (1st half 0.1040, 2nd half 0.0600, part-to-part std 0.0417) s in [0.000,0.316] v_par sign change=True
+  k= 4 escaped  lam1= 0.00255 lam1*T=  509.7 <s>=0.2022  (1st half 0.3570, 2nd half 0.0473, part-to-part std 0.2548) s in [0.000,2.055] v_par sign change=True
+  k= 5 escaped  lam1= 0.00153 lam1*T=  306.1 <s>=0.3324  (1st half 0.4472, 2nd half 0.2177, part-to-part std 0.1941) s in [0.006,2.041] v_par sign change=True
+  k= 6 chaotic  lam1= 0.00261 lam1*T=  522.4 <s>=0.0777  (1st half 0.0838, 2nd half 0.0716, part-to-part std 0.0371) s in [0.000,0.308] v_par sign change=True
+  k= 7 escaped  lam1= 0.00104 lam1*T=  208.5 <s>=0.6258  (1st half 0.5828, 2nd half 0.6688, part-to-part std 0.1690) s in [0.018,1.990] v_par sign change=True
+  k= 8 escaped  lam1= 0.00156 lam1*T=  311.7 <s>=0.3880  (1st half 0.5328, 2nd half 0.2431, part-to-part std 0.2589) s in [0.001,2.050] v_par sign change=True
+  k= 9 escaped  lam1= 0.00006 lam1*T=   11.8 <s>=1.0809  (1st half 1.1031, 2nd half 1.0587, part-to-part std 0.1697) s in [0.032,2.226] v_par sign change=True
+  k=10 escaped  lam1= 0.00006 lam1*T=   11.3 <s>=1.5466  (1st half 1.5530, 2nd half 1.5402, part-to-part std 0.2265) s in [0.071,2.961] v_par sign change=True
+  k=11 escaped  lam1= 0.00005 lam1*T=   10.9 <s>=1.5274  (1st half 1.5278, 2nd half 1.5269, part-to-part std 0.2165) s in [0.069,2.926] v_par sign change=True
+  k=12 escaped  lam1= 0.00006 lam1*T=   11.4 <s>=1.5071  (1st half 1.5094, 2nd half 1.5048, part-to-part std 0.2286) s in [0.068,2.903] v_par sign change=True
+  k=13 escaped  lam1= 0.00112 lam1*T=  224.2 <s>=0.6125  (1st half 0.5829, 2nd half 0.6421, part-to-part std 0.2199) s in [0.013,2.063] v_par sign change=True
+  k=14 escaped  lam1= 0.00146 lam1*T=  291.3 <s>=0.4297  (1st half 0.2543, 2nd half 0.6050, part-to-part std 0.2669) s in [0.006,2.062] v_par sign change=True
+  k=15 escaped  lam1= 0.00112 lam1*T=  224.1 <s>=0.5940  (1st half 0.4551, 2nd half 0.7329, part-to-part std 0.2366) s in [0.006,2.049] v_par sign change=True
+  chaotic initial conditions: 3; <s> across them: mean 0.0634, std 0.0286; typical within-run standard error 0.0071  ->  spread / standard error = 4.0 (about 1 for an ergodic set)

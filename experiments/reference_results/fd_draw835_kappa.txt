@@ -1,0 +1,42 @@
+# produced by: python3 experiments/scripts/summarize_gc_official_fd.py results/gc_official_fd_seed835_kappa --sea-rel 0.05   (run from the repository root on the stored results; numbers with more than 12 digits are shown in scientific notation)
+540 runs from results/gc_official_fd_seed835_kappa: parameter kappa, T = 200000, dt = 0.01, 9 values with spacing 0.01, centre 0.07106
+
+sea copies only (part-to-part std of <s> > 0.05 * <s>):
+  kappa = 0.03106: n = 40  <s> = 0.04077 +- 0.00083  (copy std 0.0052, within-run SE 0.0025)  median s_max 0.087  s_min 0.0112
+  kappa = 0.04106: n = 45  <s> = 0.04088 +- 0.00051  (copy std 0.0034, within-run SE 0.0024)  median s_max 0.091  s_min 0.0086
+  kappa = 0.05106: n = 45  <s> = 0.04069 +- 0.00040  (copy std 0.0027, within-run SE 0.0021)  median s_max 0.095  s_min 0.0068
+  kappa = 0.06106: n = 55  <s> = 0.04072 +- 0.00032  (copy std 0.0024, within-run SE 0.0020)  median s_max 0.099  s_min 0.0050
+  kappa = 0.07106: n = 60  <s> = 0.04121 +- 0.00024  (copy std 0.0019, within-run SE 0.0017)  median s_max 0.103  s_min 0.0037
+  kappa = 0.08106: n = 60  <s> = 0.04128 +- 0.00023  (copy std 0.0017, within-run SE 0.0015)  median s_max 0.106  s_min 0.0026
+  kappa = 0.09106: n = 50  <s> = 0.04097 +- 0.00022  (copy std 0.0016, within-run SE 0.0014)  median s_max 0.110  s_min 0.0015
+  kappa = 0.10106: n = 50  <s> = 0.04157 +- 0.00020  (copy std 0.0014, within-run SE 0.0013)  median s_max 0.114  s_min 0.0007
+  kappa = 0.11106: n = 50  <s> = 0.04116 +- 0.00017  (copy std 0.0012, within-run SE 0.0012)  median s_max 0.118  s_min 0.0002
+  slope d<s>/dkappa at the centre from the points within k*h (straight line):
+    k = 1:  3 points    +0.025 +- 0.019   chi2/dof =    0.5/1
+    k = 2:  5 points    +0.008 +- 0.009   chi2/dof =    2.7/3
+    k = 3:  7 points    +0.013 +- 0.006   chi2/dof =    4.0/5
+    k = 4:  9 points    +0.007 +- 0.004   chi2/dof =    6.4/7
+  slope at the centre from a parabola through the points within k*h:
+    k = 2:  5 points    +0.012 +- 0.010   chi2/dof =    0.9/2
+    k = 3:  7 points    +0.012 +- 0.007   chi2/dof =    3.9/4
+    k = 4:  9 points    +0.010 +- 0.006   chi2/dof =    5.7/6
+
+all bounded copies:
+  kappa = 0.03106: n = 60  <s> = 0.04657 +- 0.00231  (copy std 0.0179, within-run SE 0.0017)  median s_max 0.087  s_min 0.0120
+  kappa = 0.04106: n = 60  <s> = 0.04321 +- 0.00174  (copy std 0.0135, within-run SE 0.0018)  median s_max 0.091  s_min 0.0088
+  kappa = 0.05106: n = 60  <s> = 0.04319 +- 0.00152  (copy std 0.0118, within-run SE 0.0016)  median s_max 0.094  s_min 0.0069
+  kappa = 0.06106: n = 60  <s> = 0.04356 +- 0.00126  (copy std 0.0098, within-run SE 0.0018)  median s_max 0.099  s_min 0.0050
+  kappa = 0.07106: n = 60  <s> = 0.04121 +- 0.00024  (copy std 0.0019, within-run SE 0.0017)  median s_max 0.103  s_min 0.0037
+  kappa = 0.08106: n = 60  <s> = 0.04128 +- 0.00023  (copy std 0.0017, within-run SE 0.0015)  median s_max 0.106  s_min 0.0026
+  kappa = 0.09106: n = 60  <s> = 0.03848 +- 0.00075  (copy std 0.0058, within-run SE 0.0012)  median s_max 0.110  s_min 0.0015
+  kappa = 0.10106: n = 60  <s> = 0.03896 +- 0.00078  (copy std 0.0060, within-run SE 0.0011)  median s_max 0.114  s_min 0.0008
+  kappa = 0.11106: n = 60  <s> = 0.03856 +- 0.00077  (copy std 0.0060, within-run SE 0.0010)  median s_max 0.118  s_min 0.0002
+  slope d<s>/dkappa at the centre from the points within k*h (straight line):
+    k = 1:  3 points    -0.015 +- 0.031   chi2/dof =    3.1/1
+    k = 2:  5 points    -0.064 +- 0.024   chi2/dof =   11.5/3
+    k = 3:  7 points    -0.071 +- 0.018   chi2/dof =   12.1/5
+    k = 4:  9 points    -0.076 +- 0.014   chi2/dof =   12.9/7
+  slope at the centre from a parabola through the points within k*h:
+    k = 2:  5 points    -0.051 +- 0.029   chi2/dof =   11.0/2
+    k = 3:  7 points    -0.061 +- 0.021   chi2/dof =   11.2/4
+    k = 4:  9 points    -0.075 +- 0.017   chi2/dof =   12.8/6

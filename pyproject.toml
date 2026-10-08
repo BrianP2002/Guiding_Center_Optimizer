@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nilss-jax"
+version = "0.1.0"
+description = "Non-intrusive least squares shadowing (NILSS) in JAX: multi-parameter, streaming, with diagnostics for when the sensitivity cannot be trusted"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+authors = [{name = "Lin Ha"}]
+keywords = ["chaos", "sensitivity analysis", "shadowing", "NILSS", "JAX", "guiding center", "stellarator"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+dependencies = [
+    "numpy>=1.23",
+    "scipy>=1.9",
+    "jax>=0.4.20",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7", "matplotlib>=3.5"]
+plots = ["matplotlib>=3.5"]
+dev = ["pytest>=7", "matplotlib>=3.5", "ruff"]
+
+[project.scripts]
+nilss-jax = "nilss_jax.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/BrianP2002/Guiding_Center_Optimizer"
+Issues = "https://github.com/BrianP2002/Guiding_Center_Optimizer/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"nilss_jax.systems" = ["data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: tests that take more than ~20 s (deselect with -m 'not slow')"]
+pythonpath = ["legacy", "experiments/scripts"]
+
+[tool.ruff]
+line-length = 140
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E9", "F"]
+ignore = ["F401"]

@@ -1,0 +1,60 @@
+# produced by: python3 experiments/scripts/summarize_gc_official_nilss.py results/gc_official_nilss_seed835 --sea-lambda 0.001 --lambda-scan 0.0003,0.001,0.002,0.0027 --fd-sea-rel 0.05 --fd eps_2=results/gc_official_fd_seed835_eps_2 --fd eps_h=results/gc_official_fd_seed835_eps_h --fd kappa=results/gc_official_fd_seed835_kappa --fd iota=results/gc_official_fd_seed835_iota   (run from the repository root on the stored results; numbers with more than 12 digits are shown in scientific notation)
+60 runs from results/gc_official_nilss_seed835; T = 200000; parameters ['eps_2', 'eps_h', 'kappa', 'iota']
+largest exponent of the runs: min 0.00255, median 0.00305, max 0.00365; 0 runs below 0.001 (regular torus, dropped below)
+
+nus = 1, T_seg = 200: 48 sea runs, <s> = 0.0412
+  dJ/deps_2 : mean   +0.935 +-  0.321   median   +0.756 [+0.530, +0.989]   10-90%: [-0.43, +2.16]   fraction > 0: 0.88
+  dJ/deps_h : mean   -0.573 +-  0.019   median   -0.562 [-0.578, -0.538]   10-90%: [-0.66, -0.45]   fraction > 0: 0.00
+  dJ/dkappa : mean   +0.222 +-  0.032   median   +0.238 [+0.198, +0.255]   10-90%: [+0.07, +0.37]   fraction > 0: 0.98
+  dJ/diota  : mean   +0.074 +-  0.041   median   +0.079 [+0.035, +0.094]   10-90%: [-0.12, +0.26]   fraction > 0: 0.79
+nus = 2, T_seg = 200: 12 sea runs, <s> = 0.0418
+  dJ/deps_2 : mean   +0.843 +-  0.795   median   +0.956 [+0.571, +2.201]   10-90%: [-0.51, +3.41]   fraction > 0: 0.83
+  dJ/deps_h : mean   -0.506 +-  0.078   median   -0.503 [-0.560, -0.415]   10-90%: [-0.59, -0.17]   fraction > 0: 0.00
+  dJ/dkappa : mean   +0.273 +-  0.120   median   +0.260 [+0.227, +0.378]   10-90%: [+0.22, +0.77]   fraction > 0: 0.92
+  dJ/diota  : mean   +0.072 +-  0.120   median   +0.093 [+0.035, +0.257]   10-90%: [-0.16, +0.53]   fraction > 0: 0.83
+
+ground truth (finite differences over sea orbits, slope in windows around the base value):
+  eps_2: NILSS mean +0.935 +- 0.321, median +0.756
+  eps_h: NILSS mean -0.573 +- 0.019, median -0.562
+  kappa: NILSS mean +0.222 +- 0.032, median +0.238
+  iota: NILSS mean +0.074 +- 0.041, median +0.079
+
+sensitivity of the NILSS result (main setting) to the sea threshold on lambda_1:
+  lambda_1 >= 0.0003: 48 of 48 runs;  eps_2 mean +0.93 median +0.76;  eps_h mean -0.57 median -0.56;  kappa mean +0.22 median +0.24;  iota mean +0.07 median +0.08
+  lambda_1 >= 0.001: 48 of 48 runs;  eps_2 mean +0.93 median +0.76;  eps_h mean -0.57 median -0.56;  kappa mean +0.22 median +0.24;  iota mean +0.07 median +0.08
+  lambda_1 >= 0.002: 48 of 48 runs;  eps_2 mean +0.93 median +0.76;  eps_h mean -0.57 median -0.56;  kappa mean +0.22 median +0.24;  iota mean +0.07 median +0.08
+  lambda_1 >= 0.0027: 46 of 48 runs;  eps_2 mean +0.95 median +0.77;  eps_h mean -0.57 median -0.56;  kappa mean +0.22 median +0.24;  iota mean +0.08 median +0.08
+
+shadowing direction along the 48 sea runs of the main setting (1000 segments each):
+  eps_2: |v_perp| median 11.82, 90% 62.0, 99% 820, 99.9% 6765, max 81024;  median by quarter of the run [12.11, 11.81, 11.52, 11.9]
+       tail index (Hill, k = 100 / 1000) of |v_perp|: 1.35 / 0.96; of the per-segment contributions: 1.33 / 0.95;  top 1% of the segments carry 0.45 of the sum of |contributions|
+       corr(|run estimate - median|, max |v_perp| of the run) = 0.95
+       estimate from sub-runs of L segments:  L=1: median +0.46, IQR 2.10;  L=10: median +0.80, IQR 1.75;  L=100: median +0.78, IQR 0.92;  L=1000: median +0.76, IQR 0.85;  IQR(L=1) / IQR(L=1000) = 2.5 (31.6 if the variance were finite)
+  eps_h: |v_perp| median 4.93, 90% 14.2, 99% 166, 99.9% 1028, max 17952;  median by quarter of the run [5.04, 4.95, 4.81, 4.93]
+       tail index (Hill, k = 100 / 1000) of |v_perp|: 1.33 / 1.09; of the per-segment contributions: 1.41 / 1.32;  top 1% of the segments carry 0.16 of the sum of |contributions|
+       corr(|run estimate - median|, max |v_perp| of the run) = 0.13
+       estimate from sub-runs of L segments:  L=1: median -0.48, IQR 0.62;  L=10: median -0.50, IQR 0.52;  L=100: median -0.55, IQR 0.24;  L=1000: median -0.56, IQR 0.10;  IQR(L=1) / IQR(L=1000) = 6.0 (31.6 if the variance were finite)
+  kappa: |v_perp| median 4.37, 90% 15.2, 99% 170, 99.9% 1125, max 12887;  median by quarter of the run [4.5, 4.33, 4.24, 4.42]
+       tail index (Hill, k = 100 / 1000) of |v_perp|: 1.45 / 1.09; of the per-segment contributions: 1.57 / 1.02;  top 1% of the segments carry 0.35 of the sum of |contributions|
+       corr(|run estimate - median|, max |v_perp| of the run) = 0.59
+       estimate from sub-runs of L segments:  L=1: median +0.21, IQR 0.22;  L=10: median +0.21, IQR 0.12;  L=100: median +0.23, IQR 0.09;  L=1000: median +0.24, IQR 0.11;  IQR(L=1) / IQR(L=1000) = 2.1 (31.6 if the variance were finite)
+  iota: |v_perp| median 2.91, 90% 12.9, 99% 151, 99.9% 1020, max 11929;  median by quarter of the run [3.0, 2.96, 2.79, 2.89]
+       tail index (Hill, k = 100 / 1000) of |v_perp|: 1.53 / 1.04; of the per-segment contributions: 1.63 / 1.00;  top 1% of the segments carry 0.39 of the sum of |contributions|
+       corr(|run estimate - median|, max |v_perp| of the run) = 0.93
+       estimate from sub-runs of L segments:  L=1: median -0.04, IQR 0.53;  L=10: median +0.01, IQR 0.34;  L=100: median +0.06, IQR 0.13;  L=1000: median +0.08, IQR 0.12;  IQR(L=1) / IQR(L=1000) = 4.5 (31.6 if the variance were finite)
+
+same orbit, different settings (d J / d eps_2):
+  copy  nus1/Tseg200   nus2/Tseg200  
+     0          1.407         1.410
+     1          0.480         0.481
+     2          0.665         0.662
+     3          0.064         4.629
+     4          0.998         0.999
+     5         -1.090        -0.622
+     6          2.982         2.992
+     7          1.048         1.046
+     8          0.763         3.452
+     9         -7.038        -6.572
+    10          0.731         0.723
+    11          0.913         0.912
+  (2, 200.0): largest |difference from nus1/Tseg200| = 4.564 over 12 orbits; median |difference| = 0.006

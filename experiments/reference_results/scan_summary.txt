@@ -1,0 +1,31 @@
+# produced by: python3 experiments/scripts/summarize_gc_official_scan.py results/gc_official_scan   (run from the repository root on the stored results; numbers with more than 12 digits are shown in scientific notation)
+960 draws from results/gc_official_scan
+
+exact quasi-helical field (control): 149 draws
+  regular     124  (83.2 %)
+  chaotic       0  ( 0.0 %)
+  escaped      25  (16.8 %)
+  inaccurate    0  ( 0.0 %)
+  bounded passing: 0/114 chaotic
+  bounded trapped: 0/10 chaotic
+
+symmetry broken: 811 draws
+  regular     577  (71.1 %)
+  chaotic       9  ( 1.1 %)
+  escaped     220  (27.1 %)
+  inaccurate    5  ( 0.6 %)
+  bounded passing: 0/519 chaotic
+  bounded trapped: 9/67 chaotic
+
+control: max lambda_1 * T = 8.8.4871e+13 (integrable: only numerical noise expected)
+
+bounded chaotic draws: 9
+  seed=  95 lam1=0.0140 lam1*T=56.2 kappa=0.593 N=2 eps_h=0.097 eps_t=0.053 eps_m=0.000 eps_2=0.035(N2=4) iota=1.12 lam=0.980 trapped=True <s> parts=[0.163 0.266 0.1   0.067] lam1(t)=[0.009 0.009 0.013 0.014]
+  seed= 951 lam1=0.0100 lam1*T=39.9 kappa=0.121 N=3 eps_h=0.162 eps_t=0.047 eps_m=0.000 eps_2=0.000(N2=4) iota=1.11 lam=0.952 trapped=True <s> parts=[0.065 0.083 0.091 0.116] lam1(t)=[0.011 0.014 0.011 0.01 ]
+  seed=  34 lam1=0.0070 lam1*T=28.2 kappa=0.445 N=2 eps_h=0.132 eps_t=0.000 eps_m=0.083 eps_2=0.011(N2=3) iota=0.58 lam=0.940 trapped=True <s> parts=[0.032 0.094 0.15  0.057] lam1(t)=[0.016 0.008 0.008 0.007]
+  seed= 581 lam1=0.0069 lam1*T=27.6 kappa=0.157 N=2 eps_h=0.125 eps_t=0.034 eps_m=0.018 eps_2=0.007(N2=4) iota=0.78 lam=1.026 trapped=True <s> parts=[0.052 0.051 0.096 0.083] lam1(t)=[0.006 0.007 0.007 0.007]
+  seed= 959 lam1=0.0064 lam1*T=25.7 kappa=0.065 N=5 eps_h=0.089 eps_t=0.034 eps_m=0.006 eps_2=0.000(N2=7) iota=1.20 lam=0.994 trapped=True <s> parts=[0.025 0.04  0.03  0.02 ] lam1(t)=[0.008 0.006 0.004 0.006]
+  seed= 835 lam1=0.0060 lam1*T=24.0 kappa=0.071 N=1 eps_h=0.108 eps_t=0.000 eps_m=0.000 eps_2=0.012(N2=3) iota=0.33 lam=0.985 trapped=True <s> parts=[0.021 0.022 0.021 0.021] lam1(t)=[0.008 0.005 0.006 0.006]
+  seed= 663 lam1=0.0059 lam1*T=23.5 kappa=0.253 N=3 eps_h=0.077 eps_t=0.028 eps_m=0.037 eps_2=0.000(N2=1) iota=0.65 lam=1.014 trapped=True <s> parts=[0.222 0.2   0.115 0.134] lam1(t)=[0.003 0.005 0.005 0.006]
+  seed= 873 lam1=0.0053 lam1*T=21.2 kappa=0.241 N=2 eps_h=0.130 eps_t=0.007 eps_m=0.009 eps_2=0.076(N2=1) iota=1.38 lam=0.902 trapped=True <s> parts=[0.312 0.337 0.392 0.291] lam1(t)=[0.008 0.006 0.005 0.005]
+  seed= 792 lam1=0.0053 lam1*T=21.0 kappa=0.351 N=3 eps_h=0.042 eps_t=0.006 eps_m=0.007 eps_2=0.016(N2=1) iota=1.62 lam=1.001 trapped=True <s> parts=[0.136 0.088 0.08  0.259] lam1(t)=[0.007 0.005 0.006 0.005]
